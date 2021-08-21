@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+#logo {
+  width: 50px;
+}
+#menu {
+  width: 100%;
+  background-color: #9e2372;
+}
+.myBtnContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  background-color: #9e2372;
+  color: #ffffff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px;
+  margin: 2px 0;
+  border-radius: 10px;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover,
+#menu:hover {
+  color: #9e2372;
+  background-color: #ffffff;
+  transition: 0.5s;
+  border: 1px solid #9e2372;
+}
+
+hr,
+h4 {
+  color: #9e2372;
+}
+
+.price {
+  color: #9e237298;
+  font-weight: 800;
+}
+
+/* Bebidas */
+.bebidas_title {
+  font-weight: bold;
+  color: #666666;
+}
+.column_bebidas {
+  width: 100%;
+}
