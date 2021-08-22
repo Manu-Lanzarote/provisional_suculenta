@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
@@ -10,13 +9,34 @@ body {
   font-size: 15px;
 }
 
+header {
+  padding-bottom: 10px;
+}
+
 .logo {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 #logo {
-  width: 50px;
+  width: 60px;
+  cursor: pointer;
 }
+
+.fa-phone {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #9e2372;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+.llamar {
+  color: #e27ebf;
+}
+
 #menu {
   width: 100%;
   background-color: #9e2372;
@@ -27,34 +47,18 @@ body {
   flex-flow: row wrap;
 }
 
-.row {
-  margin: 8px -16px;
+.main_cont {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 33.33%;
+  padding: 10px;
   display: none; /* Hide columns by default */
 }
 
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
+img {
+  max-width: 100%;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -71,7 +75,7 @@ body {
   font-size: 14px;
   padding: 6px;
   margin: 2px 0;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 /* Add a grey background color on mouse-over */
@@ -100,4 +104,41 @@ h4 {
 }
 .column_bebidas {
   width: 100%;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background-color: #9e2372;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.horario,
+footer a,
+footer h4 {
+  color: #ffffff;
+}
+
+.fab {
+  font-size: 24px;
+  margin: 10px;
+}
+.iconos_footer {
+  text-align: center;
+}
+
+/* Media queries */
+@media only screen and (min-width: 600px) {
+  .main_cont {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    margin: 0 10%;
+  }
 }
