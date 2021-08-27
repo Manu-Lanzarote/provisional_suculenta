@@ -18,6 +18,8 @@ function w3AddClass(element, name) {
   for (i = 0; i < arr2.length; i++) {
     if (arr1.indexOf(arr2[i]) == -1) {
       element.className += " " + arr2[i];
+      // Mostrar la selección desde arriba
+      window.scrollTo(0, 0);
     }
   }
 }
