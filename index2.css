@@ -3,16 +3,16 @@
 }
 
 body {
-  background-color: #ffffff;
+  background: linear-gradient(35deg, #fff, #ffcccc);
   margin: auto;
-  padding: 10px;
   font-size: 15px;
 }
 
 header {
   position: sticky;
   top: -40px;
-  background-color: #ffffff;
+  padding: 10px;
+  background: #ffcccc;
 }
 
 .logo {
@@ -95,6 +95,10 @@ h4 {
   color: #9e2372;
 }
 
+.gris {
+  color: #00000095;
+}
+
 .price {
   color: #9e237298;
   font-weight: 800;
@@ -103,7 +107,7 @@ h4 {
 /* Bebidas */
 .bebidas_title {
   font-weight: bold;
-  color: #666666;
+  color: #00000095;
 }
 .column_bebidas {
   width: 100%;
