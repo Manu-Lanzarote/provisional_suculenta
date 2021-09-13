@@ -1,23 +1,25 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: linear-gradient(35deg, #fff, #ffcccc);
+  background: linear-gradient(45deg, #fff, #fce4ec);
   margin: auto;
   font-size: 15px;
 }
 
 header {
   position: sticky;
-  top: -40px;
-  padding: 10px;
-  background: #ffcccc;
+  top: -50px;
+  background: #fce4ec;
 }
 
 .logo {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 #logo {
   width: 60px;
@@ -36,7 +38,7 @@ a {
   padding-top: 8px;
 }
 .llamar {
-  color: #e27ebf;
+  color: #9e2372;
 }
 
 #menu {
@@ -47,7 +49,7 @@ a {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .main_cont {
@@ -70,7 +72,7 @@ img {
 }
 
 /* Style the buttons */
-.btn {
+.btn, .reservar{
   background-color: #9e2372;
   color: #ffffff;
   border: 1px solid #fff;
@@ -83,7 +85,7 @@ img {
 
 /* Add a grey background color on mouse-over */
 .btn:hover,
-#menu:hover {
+#menu:hover, .reservar:hover {
   color: #9e2372;
   background-color: #ffffff;
   transition: 0.5s;
@@ -121,6 +123,8 @@ footer {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+  padding: 20px;
+  line-height: 1.5rem;
 }
 
 .footer {
@@ -131,6 +135,10 @@ footer {
 footer a,
 footer h4 {
   color: #ffffff;
+}
+
+footer h2{
+  padding-bottom: 10px;
 }
 
 .fab {

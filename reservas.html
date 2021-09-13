@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+     <!-- FONT AWESOME -->
+     <script
+     src="https://kit.fontawesome.com/4ff9607121.js"
+     crossorigin="anonymous"
+   ></script>
+    <title>Reservas</title>
+</head>
+<body>
+    <header>
+        <div class="cont_logo">
+            <div class="logo">
+              <a href="index.html"><img src="imagenes/suculenta.png" alt="logo" id="logo" /></a>
+              <a href="tel:+34928590707" class="llamar"><i class="fas fa-phone"></i>928 59 07 07</a>
+              <a href="index.html" class="llamar "><button class="reservar">Menú / Menu</button></a>
+            </div>
+    </header>
+    <section>
+        <form id="form" action="https://formsubmit.co/madrid29@hotmail.com" method="POST">
+            <legend>RECIBE LAS OFERTAS ESPECIALES PARA SOCIOS</legend>
+            <input type="email" id="t2" name="email" placeholder="Introduce tu correo electrónico" required title="Email incorrecto"
+            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+            <input type="hidden" name="_subject" value="Café Suculenta">
+            <input type="hidden" name="_next" value="https://suculentacafe.es/">
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit" id="submit" onclick="enviar()">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer">
+          <h2>Horarios / Timetables</h2>
+          <h4>Abierto / Open</h4>
+          <p>Miércoles a Lunes / Wednesday to Monday</p>
+          <p>09:00 am - 17:00 pm</p>
+          <h4>Cerrado / Closed</h4>
+          <p>Martes / Tuesday</p>
+        </div>
+        <br>
+        <div class="footer">
+          <h2>Reservas / Booking</h2>
+          <a href="tel:+34928590707" class="llamar"><i class="fas fa-phone"></i>928 59 07 07</a>
+          <p>Calle las Olas, 21 - Plaza del Coral</p>
+          <p>35508 Costa Teguise - Lanzarote</p>
+          <h3 class="llamar">cafesuculenta@gmail.com</h3>
+        </div>
+        <div class="iconos_footer">
+          <a href="https://www.facebook.com/Suculenta-Café-355882038593818/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/suculenta_cafe/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+<script>
+    function enviar(){
+        alert("Enviando el formulario")
+    }
+</script>
+</body>
+</html>
