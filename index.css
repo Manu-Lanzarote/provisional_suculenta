@@ -72,7 +72,8 @@ img {
 }
 
 /* Style the buttons */
-.btn, .reservar{
+.btn,
+.reservar {
   background-color: #9e2372;
   color: #ffffff;
   border: 1px solid #fff;
@@ -85,7 +86,8 @@ img {
 
 /* Add a grey background color on mouse-over */
 .btn:hover,
-#menu:hover, .reservar:hover {
+#menu:hover,
+.reservar:hover {
   color: #9e2372;
   background-color: #ffffff;
   transition: 0.5s;
@@ -137,8 +139,12 @@ footer h4 {
   color: #ffffff;
 }
 
-footer h2{
+footer h2 {
   padding-bottom: 10px;
+}
+
+.telefono {
+  color: pink;
 }
 
 .fab {
@@ -149,6 +155,26 @@ footer h2{
   text-align: center;
 }
 
+.politicas {
+  text-align: center;
+}
+
+.avisos {
+  display: inline-block;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.proweb {
+  font-size: 14px;
+  margin: 0 5px;
+}
+.proweb:hover {
+  color: pink;
+}
+
 /* Media queries */
 @media only screen and (min-width: 600px) {
   .main_cont {
@@ -156,4 +182,108 @@ footer h2{
     grid-template-columns: 33.3% 33.3% 33.3%;
     margin: 0 5%;
   }
+}
+
+/* ESTILOS DE LOS MODALES */
+
+.modal-contenido {
+  background-color: rgb(224, 224, 224);
+  width: 80vw;
+  padding: 15px 10px 0px;
+  margin: 60px auto;
+  position: relative;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.modal-contenido h3 {
+  color: black;
+  padding-bottom: 20px;
+}
+
+/* Máxima anchura para los modales de imágenes */
+.max_ancho {
+  max-width: 300px;
+  height: 70vh;
+}
+
+/* No mostrar imágenes modales a partir de pantallas mayores de 700px */
+@media only screen and (min-width: 700px) {
+  .no_mostrar {
+    display: none;
+  }
+  .imagen {
+    cursor: initial;
+  }
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+
+.position {
+  position: sticky;
+  text-align: right;
+  padding: 20px 10px 10px;
+  bottom: 0px;
+  background-color: rgb(224, 224, 224);
+}
+
+/* TARGETS POLÍTICAS */
+#legal:target,
+#privacidad:target,
+#cookies:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* TARGETS IMÁGENES */
+#t_aguacate:target,
+#t_salmon:target,
+#hummus:target,
+#rulo:target,
+#tumaca:target,
+#sucu:target,
+#mermelada:target,
+#tortilla:target,
+#granola:target,
+#huevos:target,
+#chia:target,
+#gofre:target,
+#macedonia:target,
+#tortitas:target,
+#bao:target,
+#carpa_tomate:target,
+#carpa_solomillo:target,
+#tartar:target,
+#tartar_salmon:target,
+#tataki:target,
+#veggie:target,
+#carne:target,
+#pollo:target,
+#chicken:target,
+#casa:target,
+#calabaza:target,
+#tropical:target,
+#solomillo:target,
+#suprema:target,
+#bacalao:target,
+#zanahoria:target,
+#queso:target,
+#helado:target,
+#resplandor:target,
+#euforia:target,
+#silvestre:target,
+#mora:target,
+#zumo:target {
+  opacity: 1;
+  pointer-events: auto;
 }
