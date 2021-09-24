@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/form.css" />
     <!-- ROBOTO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-     <!-- FONT AWESOME -->
-     <script
-     src="https://kit.fontawesome.com/4ff9607121.js"
-     crossorigin="anonymous"
-   ></script>
-    <title>Reservas</title>
-    <meta name="description" content="Suculenta Café. Booking / Reservas" />
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/4ff9607121.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nuestra historia</title>
+    <meta
+      name="description"
+      content="Suculenta Café. Nuestra historia / Our Story"
+    />
+  </head>
+  <body>
     <header class="barra_sticky">
         <div class="cont_logo">
             <div class="logo">
@@ -27,58 +32,23 @@
               <a href="index.html" class="llamar"><button class="reservar">Menú / Menu</button></a>
             </div>
     </header>
-    <div class="hero">
-      <div class="hero_text">
-        <h2>Convertimos el amor en alimento<i class="far fa-heart corazon"></i>We turn love into food</h2>
-        <div class="amor"><a href="nosotros.html"><button class="reservar">Nuestra historia / Our Story</button></a></div>
-      </div>
-    </div>
 
     <main>
-      <section class="map_form">
-        <!-- FORMULARIO  CON formsubmit-->
-        <div class="formulario">
-          <form id="form" action="https://formsubmit.co/madrid29@hotmail.com" method="POST">
-              <H1>CONTACTO</H1>
-              <p>Recibirás un correo confirmando tu reserva en breve</p>
-              <input type="email" id="t2" name="email" placeholder="Introduce tu correo electrónico" required title="Email incorrecto"
-              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
-              <input type="hidden" name="_subject" value="Web Suculenta Café ">
-              <input type="hidden" name="_next" value="https://suculentacafe.es/">
-              <input type="hidden" name="_captcha" value="false">
-              <button type="submit" id="submit" onclick="enviar()">Enviar</button>
-          </form>
+        <div>
+            <h1>Nuestra historia / Our Story</h1>
+            <p>Suculenta nace de un emprendimiento familiar que finalmente se materializa en el 2019. Surge de la necesidad propia de encontrar más lugares en la isla, que ofrezcan una cocina con alternativas saludables y diferentes. Somos dos amantes de la comida saludable, natural y fresca pero quizás cuando mencionas estos tres adjetivos la gente puede confundirlo con una cocina aburrida o sin sabor. Sin embargo, hemos querido construir una propuesta de platos con una combinación de sabores y colores que se basen en estos tres pilares. Queremos que nuestros comensales se lleven como recuerdo, una suculenta “explosión de sabores”.</p>
+            <br>
+            <p>Suculenta is born from a family enterprise that finally materializes in 2019. It arises from the need to find more places on the island that offer a cuisine with healthy and different alternatives. We are two lovers of healthy, natural and fresh food but perhaps when you mention these three adjectives people may confuse it with a boring or tasteless cuisine. However, we wanted to build a proposal of dishes with a combination of flavors and colors that are based on these three pillars. We want our diners to take away as a souvenir, a succulent “explosion of flavors”.</p>
+            <img src="imagenes/diana.jpeg" alt="Diana Abella">
         </div>
-        <br><br><br>
-        <hr>
-        <br><br><br>
-        <!-- FORMULARIO W3SCHOOLS -->
-        <div class="container">
-          <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-        
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
-          </form>
+        <div class="baner">
+            <h2>"Queremos que nuestros clientes se sientan como en casa / We want our customers to feel at home"</h2>
+            <p>Queremos y cuidamos de nuestras instalaciones, así como lo que sale de ella. Por eso, para nosotras es importante integrar el cuidado del medio ambiente como filosofía en Suculenta. Nos esforzamos por seleccionar nuestras basuras, reducir nuestro consumo de plástico y cuidar de nuestros recursos naturales. Cuidamos de nuestra casa interna, Suculenta como de nuestro gran hogar, el planeta tierra.</p>
+            <br>
+            <p>We love and care for our facilities, as well as what comes out of them. That is why it is important for us to integrate the care of the environment as a philosophy in Suculenta. We strive to select our waste, reduce our plastic consumption and take care of our natural resources. We take care of our great home, the planet earth.</p>
         </div>
+        
     </main>
-
-      <!-- GOOGLE MAPS -->
-      <div class="map-responsive"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3489.6947574199494!2d-13.492625485010263!3d28.99641488227563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc489d0ca3c854fb%3A0xac536f2e0c121a34!2sSuculenta%20Caf%C3%A9!5e0!3m2!1ses!2ses!4v1631900287704!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-    </section>
 
     <footer>
         <div class="footer">
@@ -332,10 +302,5 @@
     </div>
   </section> 
   </footer>
-  <script>
-      function enviar(){
-          alert("Enviando el formulario")
-      }
-  </script>
-</body>
+  </body>
 </html>

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <!-- Estilos generales -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- Estilos del loader -->
+    <link rel="stylesheet" type="text/css" href="css/loader.css" />
     <!-- ROBOTO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
      <!-- FONT AWESOME -->
      <script
@@ -18,6 +21,16 @@
     <meta name="description" content="Suculenta Café. Convertimos el amor en alimento. Disfruta de una carta con opciones balanceadas, ricas en sabor y con una presentación llena de color." />
   </head>
   <body>
+
+<!-- Loader APAGADO HASTA COMPROBAR SI SE NECESITA CUANDO LA WEB PASE A PRODUCCIÓN -->
+
+<!-- <div class="loader-wrapper">
+  <div class="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div> -->
+<!-- Fin del loader -->
+
     <header>
       <div class="cont_logo">
         <div class="logo">
@@ -65,673 +78,712 @@
     </header>
     <!-- Portfolio Gallery Grid -->
     <!-- TOSTADAS -->
-      <div class="main_cont">
-        <div class="column tostadas">
-            <a href="#t_aguacate">
-              <img
-                class="imagen"
-                src="imagenes/Tosta_aguacate.jpg"
-                alt="Tostada de Aguacate"
-              />
-            </a>
-            <h4>Tostada de Aguacate / Avocado Toast</h4>
-            <p class="gris">
-              Crema de aguacate con cilantro y semillas de girasol, huevo pochado y feta.
-            </p>
-            <p>
-              Avocado cream with coriander sunflower seeds, poached egg and feta cheese.
-            </p>
-            <p class="price">5,20€</p>
-        </div>
-        <div class="column tostadas">
-            <a href="#t_salmon">
-              <img
-                src="imagenes/Tosta_Salmon.jpg"
-                alt="Tostada Salmón"
-              />
-            </a>
-            <h4>Tostada Salmón / Salmon Toast</h4>
-            <p class="gris">
-              Salmón ahumado y rúcula sobre nuestra salsa raïta, con hierbabuena y
-              pepino.
-            </p>
-            <p>
-              Smoked salmon and rocket on our Raïta yogurt sauce with mint and cucumber.
-            </p>
-            <p class="price">5,50€</p>
-        </div>
-        <div class="column tostadas">
-            <a href="#hummus">
-              <img
-                src="imagenes/Tosta_Hummus.jpg"
-                alt="Tostada Hummus"
-              />
-            </a>
-            <h4>Tostada Hummus / Hummus Toast</h4>
-            <p class="gris">
-              Humus verde de la casa, tomates frescos con albahaca, aceite de
-              oliva y rúcula.
-            </p>
-            <p>
-              House green hummus, fresh chopped tomatoes with basil, olive oil and rocket.
-            </p>
-            <p class="price">4,40€</p>
-        </div>
-        <div class="column tostadas">
-            <a href="#rulo">
-              <img
-                src="imagenes/Tosta_rulo_de_cabra.jpg"
-                alt="Tostada Rulo de Cabra"
-              />
-            </a>
-            <h4>Tostada Rulo de Cabra / Goat Cheese Toast</h4>
-            <p class="gris">
-              Crema de aguacate con cilantro y semillas de calabaza, queso rulo de cabra flambeado y miel.
-            </p>
-            <p>
-              Avocado cream with coriander and pumpkin seeds, flambéed goat cheese and honey.
-            </p>
-            <p class="price">5,20€</p>
-        </div>
-        <div class="column tostadas">
-            <a href="#tumaca">
-              <img
-                src="imagenes/Tosta_tumaca.jpg"
-                alt="Tostada Tumaca"
-              />
-            </a>
-            <h4>Tostada Tumaca / Tumaca Toast</h4>
-            <p class="gris">
-              Tomate rallado aliñado con sal y aceite de oliva, semillas de sésamo, acompañado de paletilla ibérica.
-            </p>
-            <p>
-              Grated tomato seasoned with salt and olive oil, sesame seeds with iberian ham.
-            </p>
-            <p class="price">3,50€ / 4,80€</p>
-        </div>
-        <div class="column tostadas">
-            <a href="#sucu">
-              <img
-                src="imagenes/Tosta_La_Suculenta.jpg"
-                alt="Tostada La Suculenta"
-              />
-            </a>
-            <h4>La Suculenta</h4>
-            <p class="gris">
-              Láminas de aguacate sobre hummus de la casa con tomates frescos finamente picados y acompañado de huevo pochado.
-            </p>
-            <p>
-              Avocado slices on house hummus with fresh chopped tomatoes and poached egg.
-            </p>
-            <p class="price">5,80€</p>
-        </div>
-        <div class="column tostadas">
-            <a href="#mermelada">
-              <img
-                src="imagenes/Tosta_mantequila_mermelada.jpg"
-                alt="Tostada Mermelada $ Mantequilla"
-              />
-            </a>
-            <h4>Mermelada & Mantequilla / Jam & Butter</h4>
-            <p class="gris">Mermelada casera acompañada de mantequilla sobre pan artesanal.</p>
-            <p>Homemade Jam with butter on artisan bread.</p>
-            <p class="price">3,50€</p>
-        </div>
-      </div>
-      <!-- HUEVOS -->
-      <div class="main_cont">
-        <div class="column huevos">
-            <a href="#tortilla"><img src="imagenes/Tortilla.jpg" alt="Tortilla" style="width: 100%" /></a>
-            <h4>Tortilla / Omelette</h4>
-            <p class="gris">Huevos batidos con tomate y queso parmesano.</p>
-            <p>Beaten eggs with tomato and grated cheese.</p>
-            <p class="price">3,60€</p>
-        </div>
-        <div class="column huevos">
-            <a href="#huevos">
-              <img
-                src="imagenes/Huevos_pericos.jpg"
-                alt="Huevos Pericos"
-              />
-            </a>
-            <h4>Huevos Pericos / Scrambled Eggs</h4>
-            <p class="gris">Huevos revueltos con tomate y cebolla blanca finamente picados.</p>
-            <p>Scrambled eggs with tomato and white onion, finely chopped.</p>
-            <p class="price">3,60€</p>
-        </div>
-      </div>
-      <!-- DULCE -->
-     <div class="main_cont">
-        <div class="column dulce">
-            <a href="#granola">
-              <img
-                src="imagenes/Granola_suculenta.jpg"
-                alt="Granola Suculenta"
-              />
-            </a>
-            <h4>Granola Suculenta</h4>
-            <p class="gris">
-              Fruta de temporada, granola de la casa y chips de coco sobre yogurt griego o leche vegetal.
-            </p>
-            <p>
-              Seasonal fruit, house granola and coconut chips on greek yogurt or vegetable milk.
-            </p>
-            <p class="price">4,80€</p>
-        </div>
-        <div class="column dulce">
-            <a href="#chia">
-              <img
-                src="imagenes/Chia_pudding.jpg"
-                alt="Chia Pudding"
-              />
-            </a>
-            <h4>Chia Pudding</h4>
-            <p class="gris">
-              Leche de coco, semillas de chia, granola de la casa y fruta de temporada.
-            </p>
-            <p>
-              Coconut milk, chia seeds, house granola and seasonal fruit.
-            </p>
-            <p class="price">4,50€</p>
-        </div>
-        <div class="column dulce">
-            <a href="#gofre">
-              <img
-                src="imagenes/Gofre_fusion.jpg"
-                alt="Gofre Fusión"
-              />
-            </a>
-            <h4>Gofre Fusión</h4>
-            <p class="gris">
-              Escoge entre nuestra masa casera con o sin nueces. Y para untar: mantequilla de cacahuete, chocolate o un mix de de los dos. Tambien viene mermelada natural de frutos rojos, yogurt y fruta de temporada.
-            </p>
-            <p>
-              Choose between waffle with nuts or without it. On top you can put peanut butter, chocolate or a mix of both. Also comes with red fruit homemade jam, yogurt and seasonal fruit.
-            </p>
-            <p class="price">4,90€</p>
-        </div>
-        <div class="column dulce">
-            <a href="#macedonia">
-              <img
-                src="imagenes/Macedonia_de_frutas.jpg"
-                alt="Macedonia de Frutas"
-              />
-            </a>
-            <h4>Macedonia de Frutas / Fruit Salad</h4>
-            <p class="gris">
-              Frutas de temporada sobre base de zumo de naranja o yogurt
-              griego.<br /><br />
-              * Adición de Helado +1,50€
-            </p>
-            <p>
-              Seasonal fruit on a orange juice or yogurt base.<br /><br />
-              * Extra Ice Cream +1,50€
-            </p>
-            <p class="price">3,50€</p>
-        </div>
-        <div class="column dulce">
-            <a href="#tortitas">
-              <img
-                src="imagenes/Tortitas_paraiso.jpg"
-                alt="Tortitas Paraíso"
-              />
-            </a>
-            <h4>Tortitas Paraíso / Paradise Pancakes</h4>
-            <p class="gris">
-              Tortitas caseras hechas con harina de avena, leche vegetal y huevo.
-            </p>
-            <p>
-              Oatmeal homemade pancakes with plant milk and egg.
-            </p>
-            <p class="price">4,90€</p>
-        </div>
-     </div>
-      <!-- ENTRANTES -->
-    <div class="main_cont">
-        <div class="column entrantes">
-          <a href="#bao">
-            <img
-              src="imagenes/Bao_de_pollo.jpg"
-              alt="Bao de Pollo"
-            />
-          </a>
-          <h4>Bao de Pollo / Chicken Bao</h4>
-          <p class="gris">
-            Pan hecho al vapor relleno de pollo rústico, lechuga y salsas de la
-            casa.
-          </p>
-          <p>
-            Steamed bread stffed with rustic chicken, lettuce and house sauces.
-          </p>
-          <p class="price">3,80€/und</p>
-        </div>
-        <div class="column entrantes">
-            <a href="#carpa_tomate">
-              <img
-                src="imagenes/Carpaccio-de-tomate.jpg"
-                alt="Carpaccio de Tomate"
-              />
-            </a>
-            <h4>Carpaccio de Tomate / Tomato Carpaccio</h4>
-            <p class="gris">
-              Carpaccio de tomate acompañado de paletilla ibérica y queso parmesano.
-            </p>
-            <p>
-              Tomato carpaccio with iberian ham and parmesan cheese.
-            </p>
-            <p class="price">8,20€</p>
-        </div>
-        <div class="column entrantes">
-            <a href="#carpa_solomillo">
-              <img
-                src="imagenes/Carpaccio_solomillo.jpg"
-                alt="Carpaccio de Solomillo"
-              />
-            </a>
-            <h4>Carpaccio de Solomillo / Sirloin Carpaccio</h4>
-            <p class="gris">Carpaccio de solomillo acompañado de piñones y queso parmesano.</p>
-            <p>Sirloin carpaccio accompanied by pine nuts and parmesan cheese.</p>
-            <p class="price">9,20€</p>
-        </div>
-        <div class="column entrantes">
-            <a href="#tartar">
-              <img
-                src="imagenes/tartar_atun_mango.jpg"
-                alt="Tartar de atún con mango"
-              />
-            </a>
-            <h4>Tartar de atún con mango</h4>
-            <p class="gris">
-              Tartar de atún con mango.
-            </p>
-            <p>
-              Tuna Tartare with mango.
-            </p>
-            <p class="price">15,50€/und</p>
-        </div>
-        
-        <div class="column entrantes">
-            <a href="#tartar_salmon">
-              <img
-                src="imagenes/Tartar-de-Salmon.jpg"
-                alt="Tartar"
-              />
-            </a>
-            <h4>Tartar de Salmón Ahumado / Smoked Salmon Tartar</h4>
-            <p class="gris">
-              Tartar de salmón ahumado, aguacate, cebolla y tomates finamente
-              picados.
-            </p>
-            <p>
-              Smoked salmon, avocado, onion and finely chopped tomatoes.
-            </p>
-            <p class="price">12,00€</p>
-        </div>
-        <div class="column entrantes">
-            <a href="#tataki">
-              <img
-                src="imagenes/Tataki_solomillo2.jpg"
-                alt="Tortitas Paraíso"
-              />
-            </a>
-            <h4>Tataki de solomillo / Sirlion Tataki</h4>
-            <p class="gris">
-              Tataki de solomillo marinado en salsa teriyaki casera acompañado de
-              nido de verduras salteadas en soja.
-            </p>
-            <p>
-              Sirlion tataki marinated in homemade teriyaki sauce, served with a side of a nest of stir fry vegetables.
-            </p>
-            <p class="price">15,50€</p>
-        </div>
-    </div>
-      <!-- ENSALADAS -->
-    <div class="main_cont">
-        <div class="column ensaladas">
-            <a href="#chicken">
-              <img
-                src="imagenes/Bowl_de_pollo.jpg"
-                alt="Bowl de Pollo"
-              />
-            </a>
-            <h4>Bowl de Pollo / Chicken Bowl</h4>
-            <p class="gris">Pollo salteado con verduras en wok.</p>
-            <p>Grilled chicken with vegetables in wok.</p>
-            <p class="price">8,20€</p>
-        </div>
-        <div class="column ensaladas">
-            <a href="#casa">
-              <img
-                src="imagenes/Bowl_de_la_casa.jpg"
-                alt="Bowl de la Casa"
-              />
-            </a>
-            <h4>Bowl de la Casa / House Bowl</h4>
-            <p class="gris">
-              Mix de rúcula y kale, hummus verde de la casa, tagliatelles de zanahoria, quinoa, tomates frescos con albahaca, dukkah y pesto de hierbas.
-            </p>
-            <p>
-              Rocket and kale mix, green house hummus, carrot tagliatelles, quinoa, fresh tomatoes with basil, dukkah and herbal pesto.
-            </p>
-            <p class="price">8,50€</p>
-        </div>
-        <div class="column ensaladas">
-            <a href="#calabaza">
-              <img
-                src="imagenes/Ensalada_de_calabaza.jpg"
-                alt="Ensalada de Calabaza"
-              />
-            </a>
-            <h4>Ensalada de Calabaza / Pumpkin Salad</h4>
-            <p class="gris">
-              Calabaza sobre mix de espinaca y rúcula acompañada de dátiles, piñones, tomate cherry y queso feta, aderezada con nuestra salsa especial de pesto de albahaca.
-            </p>
-            <p>
-              Pumpkin on spinach and rocket mix accompanied by dates, pine nuts, cherry tomato and feta cheese, seasoned with our special sauce of basil pesto.
-            </p>
-            <p class="price">8,50€</p>
-        </div>
-        <div class="column ensaladas">
-            <a href="#tropical">
-              <img
-                src="imagenes/Capricho_tropical.jpg"
-                alt="Capricho Tropical"
-              />
-            </a>
-            <h4>Capricho Tropical / Tropical Whim</h4>
-            <p class="gris">
-              Tataki de Salmón acompañado de aguacate, tomate cherry, papaya, arroz con coco, cebolla encurtida y wakame.
-            </p>
-            <p>
-              Salmon tataki accompanied by avocado, cherry tomato, papaya, coconut rice, pickled onion and wakame.
-            </p>
-            <p class="price">14,00€</p>
-          <p>* Extra Iberiam Ham, Chicken or Smoked Salmon. 2,00€ – Extra Supreme Salmon 2,50€ </p>
-        </div>
-    </div>
-      <!-- HAMBURGUESAS -->
-      <div class="main_cont">
-        <div class="column burguers">
-              <a href="#veggie">
+      <main>
+        <div class="main_cont">
+          <div class="column tostadas">
+              <a href="#t_aguacate">
                 <img
-                  src="imagenes/Hamb_veggie.jpg"
-                  alt="Vegetariana"
-                />
-            </a>
-            </a>
-            <h4>Vegetariana / Veggie</h4>
-            <p class="gris">
-              Hamburguesa de lentejas con cebolla caramelizada y mermelada natural de frutos rojos. Y para escoger: queso rulo de cabra o queso feta, ensalada o batata.
-            </p>
-            <p>
-              Lentil burger with caramelized onion, red fruits natural mermelade, goat cheese or feta cheese, with salad or sweet potatoes.
-            </p>
-            <p class="price">6,50€</p>
-        </div>
-        <div class="column burguers">
-            <a href="#carne">
-                <img
-                  src="imagenes/Hamb_de_carne.jpg"
-                  alt="Carne"
+                  class="imagen"
+                  src="imagenes/Tosta_aguacate.jpg"
+                  alt="Tostada de Aguacate"
                 />
               </a>
-            </a>
-            <h4>Carne / Meat</h4>
-            <p class="gris">
-              Hamburguesa de carne 100% vacuno / 200 grs con cebolla caramelizada.
-              Y para escoger: queso rulo de cabra o queso feta, ensalada o batata.
-            </p>
-            <p>
-              100% beef burger / 200 g with caramelized onion. To choose: goat cheese or feta cheese, salad or sweet potato.
-            </p>
-            <p class="price">8,50€</p>
+              <h4>Tostada de Aguacate / Avocado Toast</h4>
+              <p class="gris">
+                Crema de aguacate con cilantro y semillas de girasol, huevo pochado y feta.
+              </p>
+              <p>
+                Avocado cream with coriander sunflower seeds, poached egg and feta cheese.
+              </p>
+              <p class="price">5,20€</p>
+          </div>
+          <div class="column tostadas">
+              <a href="#t_salmon">
+                <img
+                class="imagen"
+                  src="imagenes/Tosta_Salmon.jpg"
+                  alt="Tostada Salmón"
+                />
+              </a>
+              <h4>Tostada Salmón / Salmon Toast</h4>
+              <p class="gris">
+                Salmón ahumado y rúcula sobre nuestra salsa raïta, con hierbabuena y
+                pepino.
+              </p>
+              <p>
+                Smoked salmon and rocket on our Raïta yogurt sauce with mint and cucumber.
+              </p>
+              <p class="price">5,50€</p>
+          </div>
+          <div class="column tostadas">
+              <a href="#hummus">
+                <img
+                class="imagen"
+                  src="imagenes/Tosta_Hummus.jpg"
+                  alt="Tostada Hummus"
+                />
+              </a>
+              <h4>Tostada Hummus / Hummus Toast</h4>
+              <p class="gris">
+                Humus verde de la casa, tomates frescos con albahaca, aceite de
+                oliva y rúcula.
+              </p>
+              <p>
+                House green hummus, fresh chopped tomatoes with basil, olive oil and rocket.
+              </p>
+              <p class="price">4,40€</p>
+          </div>
+          <div class="column tostadas">
+              <a href="#rulo">
+                <img
+                class="imagen"
+                  src="imagenes/Tosta_rulo_de_cabra.jpg"
+                  alt="Tostada Rulo de Cabra"
+                />
+              </a>
+              <h4>Tostada Rulo de Cabra / Goat Cheese Toast</h4>
+              <p class="gris">
+                Crema de aguacate con cilantro y semillas de calabaza, queso rulo de cabra flambeado y miel.
+              </p>
+              <p>
+                Avocado cream with coriander and pumpkin seeds, flambéed goat cheese and honey.
+              </p>
+              <p class="price">5,20€</p>
+          </div>
+          <div class="column tostadas">
+              <a href="#tumaca">
+                <img
+                class="imagen"
+                  src="imagenes/Tosta_tumaca.jpg"
+                  alt="Tostada Tumaca"
+                />
+              </a>
+              <h4>Tostada Tumaca / Tumaca Toast</h4>
+              <p class="gris">
+                Tomate rallado aliñado con sal y aceite de oliva, semillas de sésamo, acompañado de paletilla ibérica.
+              </p>
+              <p>
+                Grated tomato seasoned with salt and olive oil, sesame seeds with iberian ham.
+              </p>
+              <p class="price">3,50€ / 4,80€</p>
+          </div>
+          <div class="column tostadas">
+              <a href="#sucu">
+                <img
+                class="imagen"
+                  src="imagenes/Tosta_La_Suculenta.jpg"
+                  alt="Tostada La Suculenta"
+                />
+              </a>
+              <h4>La Suculenta</h4>
+              <p class="gris">
+                Láminas de aguacate sobre hummus de la casa con tomates frescos finamente picados y acompañado de huevo pochado.
+              </p>
+              <p>
+                Avocado slices on house hummus with fresh chopped tomatoes and poached egg.
+              </p>
+              <p class="price">5,80€</p>
+          </div>
+          <div class="column tostadas">
+              <a href="#mermelada">
+                <img
+                class="imagen"
+                  src="imagenes/Tosta_mantequila_mermelada.jpg"
+                  alt="Tostada Mermelada $ Mantequilla"
+                />
+              </a>
+              <h4>Mermelada & Mantequilla / Jam & Butter</h4>
+              <p class="gris">Mermelada casera acompañada de mantequilla sobre pan artesanal.</p>
+              <p>Homemade Jam with butter on artisan bread.</p>
+              <p class="price">3,50€</p>
+          </div>
         </div>
-        <div class="column burguers">
-            <a href="#pollo">
-              <img
-                src="imagenes/Hamb_de_pollo.jpg"
-                alt="Pollo Crunchy"
-              />
-            </a>
-            <h4>Pollo Crunchy / Crispy Chicken</h4>
-            <p class="gris">
-              Hamburguesa de pollo crujiente con un toque de curry sobre hummus de la casa, datiles, tomate y queso parmesano.
-            </p>
-            <p>
-              Crispy chicken burger with a touch of curry over house hummus, dates, tomato and Parmesan cheese.
-            </p>
-            <p class="price">9,50€</p>
-          <p>* Adición Huevo a la plancha +1,50€ – * Adición Aguacate +2,00€</p>
+        <!-- HUEVOS -->
+        <div class="main_cont">
+          <div class="column huevos">
+              <a href="#tortilla">
+                <img class="imagen" src="imagenes/Tortilla.jpg" alt="Tortilla" style="width: 100%" /></a>
+              <h4>Tortilla / Omelette</h4>
+              <p class="gris">Huevos batidos con tomate y queso parmesano.</p>
+              <p>Beaten eggs with tomato and grated cheese.</p>
+              <p class="price">3,60€</p>
+          </div>
+          <div class="column huevos">
+              <a href="#huevos">
+                <img
+                class="imagen"
+                  src="imagenes/Huevos_pericos.jpg"
+                  alt="Huevos Pericos"
+                />
+              </a>
+              <h4>Huevos Pericos / Scrambled Eggs</h4>
+              <p class="gris">Huevos revueltos con tomate y cebolla blanca finamente picados.</p>
+              <p>Scrambled eggs with tomato and white onion, finely chopped.</p>
+              <p class="price">3,60€</p>
+          </div>
         </div>
-      </div>
-      <!-- ESPECIALES -->
+        <!-- DULCE -->
+       <div class="main_cont">
+          <div class="column dulce">
+              <a href="#granola">
+                <img
+                class="imagen"
+                  src="imagenes/Granola_suculenta.jpg"
+                  alt="Granola Suculenta"
+                />
+              </a>
+              <h4>Granola Suculenta</h4>
+              <p class="gris">
+                Fruta de temporada, granola de la casa y chips de coco sobre yogurt griego o leche vegetal.
+              </p>
+              <p>
+                Seasonal fruit, house granola and coconut chips on greek yogurt or vegetable milk.
+              </p>
+              <p class="price">4,80€</p>
+          </div>
+          <div class="column dulce">
+              <a href="#chia">
+                <img
+                class="imagen"
+                  src="imagenes/Chia_pudding.jpg"
+                  alt="Chia Pudding"
+                />
+              </a>
+              <h4>Chia Pudding</h4>
+              <p class="gris">
+                Leche de coco, semillas de chia, granola de la casa y fruta de temporada.
+              </p>
+              <p>
+                Coconut milk, chia seeds, house granola and seasonal fruit.
+              </p>
+              <p class="price">4,50€</p>
+          </div>
+          <div class="column dulce">
+              <a href="#gofre">
+                <img
+                class="imagen"
+                  src="imagenes/Gofre_fusion.jpg"
+                  alt="Gofre Fusión"
+                />
+              </a>
+              <h4>Gofre Fusión</h4>
+              <p class="gris">
+                Escoge entre nuestra masa casera con o sin nueces. Y para untar: mantequilla de cacahuete, chocolate o un mix de de los dos. Tambien viene mermelada natural de frutos rojos, yogurt y fruta de temporada.
+              </p>
+              <p>
+                Choose between waffle with nuts or without it. On top you can put peanut butter, chocolate or a mix of both. Also comes with red fruit homemade jam, yogurt and seasonal fruit.
+              </p>
+              <p class="price">4,90€</p>
+          </div>
+          <div class="column dulce">
+              <a href="#macedonia">
+                <img
+                class="imagen"
+                  src="imagenes/Macedonia_de_frutas.jpg"
+                  alt="Macedonia de Frutas"
+                />
+              </a>
+              <h4>Macedonia de Frutas / Fruit Salad</h4>
+              <p class="gris">
+                Frutas de temporada sobre base de zumo de naranja o yogurt
+                griego.<br /><br />
+                * Adición de Helado +1,50€
+              </p>
+              <p>
+                Seasonal fruit on a orange juice or yogurt base.<br /><br />
+                * Extra Ice Cream +1,50€
+              </p>
+              <p class="price">3,50€</p>
+          </div>
+          <div class="column dulce">
+              <a href="#tortitas">
+                <img
+                class="imagen"
+                  src="imagenes/Tortitas_paraiso.jpg"
+                  alt="Tortitas Paraíso"
+                />
+              </a>
+              <h4>Tortitas Paraíso / Paradise Pancakes</h4>
+              <p class="gris">
+                Tortitas caseras hechas con harina de avena, leche vegetal y huevo.
+              </p>
+              <p>
+                Oatmeal homemade pancakes with plant milk and egg.
+              </p>
+              <p class="price">4,90€</p>
+          </div>
+       </div>
+        <!-- ENTRANTES -->
       <div class="main_cont">
-        <div class="column especiales">
-            <a href="#solomillo">
+          <div class="column entrantes">
+            <a href="#bao">
               <img
-                src="imagenes/Solomillo_web-scaled.jpg"
-                alt="Solomillo"
+              class="imagen"
+                src="imagenes/Bao_de_pollo.jpg"
+                alt="Bao de Pollo"
               />
             </a>
-            <h4>Solomillo / Sirloin Steak</h4>
+            <h4>Bao de Pollo / Chicken Bao</h4>
             <p class="gris">
-              Solomillo acompañado de variado de setas y parmentier de batata
-              roja.
+              Pan hecho al vapor relleno de pollo rústico, lechuga y salsas de la
+              casa.
             </p>
             <p>
-              Sirloin steak accompanied by a variety of mushrooms and red sweet potato parmentier.
+              Steamed bread stffed with rustic chicken, lettuce and house sauces.
             </p>
-            <p class="price">17,50€</p>
-        </div>
-        <div class="column especiales">
-            <a href="#suprema">
-              <img
-                src="imagenes/suprema.jpg"
-                alt="Suprema de salmón"
-              />
-            </a>
-            <h4>Suprema de Salmón / Salmon Suprema</h4>
-            <p class="gris">Suprema de salmón acompañada de verduras al wok y patata con salsa de romesco.</p>
-            <p>Salmon fillet with wok vegetables, potato and romesco sauce.
-            <p class="price">13,50€</p>
-        </div>
-        <div class="column especiales">
-            <a href="#bacalao">
-              <img
-                src="imagenes/Bacalao_suculenta.jpg"
-                alt="Bacalao confitado"
-              />
-            </a>
-            <h4>Bacalao confitado / Confit Cod</h4>
-            <p class="gris">
-              Lascas de bacalao confitado con pisto de verduras y parmentier de
-              batata de Lanzarote, a la pimienta con un toque de nuez moscada.
-            </p>
-            <p>
-              Cod flakes confit with vegetable ratatouille and Lanzarote sweet potato parmentier, with pepper and a touch of nutmeg.
-            </p>
-            <p class="price">14,50€</p>
-        </div>
+            <p class="price">3,80€/und</p>
+          </div>
+          <div class="column entrantes">
+              <a href="#carpa_tomate">
+                <img
+                class="imagen"
+                  src="imagenes/Carpaccio-de-tomate.jpg"
+                  alt="Carpaccio de Tomate"
+                />
+              </a>
+              <h4>Carpaccio de Tomate / Tomato Carpaccio</h4>
+              <p class="gris">
+                Carpaccio de tomate acompañado de paletilla ibérica y queso parmesano.
+              </p>
+              <p>
+                Tomato carpaccio with iberian ham and parmesan cheese.
+              </p>
+              <p class="price">8,20€</p>
+          </div>
+          <div class="column entrantes">
+              <a href="#carpa_solomillo">
+                <img
+                class="imagen"
+                  src="imagenes/Carpaccio_solomillo.jpg"
+                  alt="Carpaccio de Solomillo"
+                />
+              </a>
+              <h4>Carpaccio de Solomillo / Sirloin Carpaccio</h4>
+              <p class="gris">Carpaccio de solomillo acompañado de piñones y queso parmesano.</p>
+              <p>Sirloin carpaccio accompanied by pine nuts and parmesan cheese.</p>
+              <p class="price">9,20€</p>
+          </div>
+          <div class="column entrantes">
+              <a href="#tartar">
+                <img
+                class="imagen"
+                  src="imagenes/tartar_atun_mango.jpg"
+                  alt="Tartar de atún con mango"
+                />
+              </a>
+              <h4>Tartar de atún con mango</h4>
+              <p class="gris">
+                Tartar de atún con mango.
+              </p>
+              <p>
+                Tuna Tartare with mango.
+              </p>
+              <p class="price">15,50€/und</p>
+          </div>
+          
+          <div class="column entrantes">
+              <a href="#tartar_salmon">
+                <img
+                class="imagen"
+                  src="imagenes/Tartar-de-Salmon.jpg"
+                  alt="Tartar"
+                />
+              </a>
+              <h4>Tartar de Salmón Ahumado / Smoked Salmon Tartar</h4>
+              <p class="gris">
+                Tartar de salmón ahumado, aguacate, cebolla y tomates finamente
+                picados.
+              </p>
+              <p>
+                Smoked salmon, avocado, onion and finely chopped tomatoes.
+              </p>
+              <p class="price">12,00€</p>
+          </div>
+          <div class="column entrantes">
+              <a href="#tataki">
+                <img
+                class="imagen"
+                  src="imagenes/Tataki_solomillo2.jpg"
+                  alt="Tortitas Paraíso"
+                />
+              </a>
+              <h4>Tataki de solomillo / Sirlion Tataki</h4>
+              <p class="gris">
+                Tataki de solomillo marinado en salsa teriyaki casera acompañado de
+                nido de verduras salteadas en soja.
+              </p>
+              <p>
+                Sirlion tataki marinated in homemade teriyaki sauce, served with a side of a nest of stir fry vegetables.
+              </p>
+              <p class="price">15,50€</p>
+          </div>
       </div>
-      <!-- POSTRES -->
+        <!-- ENSALADAS -->
       <div class="main_cont">
-        <div class="column postres">
-            <a href="#zanahoria">
-              <img
-                src="imagenes/Tarta_de_zanahoria.jpg"
-                alt="Tarta Zanahoria"
-              />
-            </a>
-            <h4>Tarta Zanahoria / Carrot Cake</h4>
-            <p class="price">4,50€</p>
-        </div>
-        <div class="column postres">
-            <a href="#queso">
-              <img
-                src="imagenes/Tarta_de_queso2.jpg"
-                alt="Tarta Queso"
-              />
-            </a>
-            <h4>Tarta Queso / Cheese Cake</h4>
-            <p class="price">4,00€</p>
-        </div>
-        <div class="column postres">
-            <a href="#helado">
-              <img
-                src="imagenes/Brownie_con_helado.jpg"
-                alt="Brownie con Helado de Vainilla"
-              />
-            </a>
-            <h4>Brownie con Helado de Vainilla / Brownie with Vanilla ice cream</h4>
-            <p class="price">4,50€</p>
-        </div>
+          <div class="column ensaladas">
+              <a href="#chicken">
+                <img
+                class="imagen"
+                  src="imagenes/Bowl_de_pollo.jpg"
+                  alt="Bowl de Pollo"
+                />
+              </a>
+              <h4>Bowl de Pollo / Chicken Bowl</h4>
+              <p class="gris">Pollo salteado con verduras en wok.</p>
+              <p>Grilled chicken with vegetables in wok.</p>
+              <p class="price">8,20€</p>
+          </div>
+          <div class="column ensaladas">
+              <a href="#casa">
+                <img
+                class="imagen"
+                  src="imagenes/Bowl_de_la_casa.jpg"
+                  alt="Bowl de la Casa"
+                />
+              </a>
+              <h4>Bowl de la Casa / House Bowl</h4>
+              <p class="gris">
+                Mix de rúcula y kale, hummus verde de la casa, tagliatelles de zanahoria, quinoa, tomates frescos con albahaca, dukkah y pesto de hierbas.
+              </p>
+              <p>
+                Rocket and kale mix, green house hummus, carrot tagliatelles, quinoa, fresh tomatoes with basil, dukkah and herbal pesto.
+              </p>
+              <p class="price">8,50€</p>
+          </div>
+          <div class="column ensaladas">
+              <a href="#calabaza">
+                <img
+                class="imagen"
+                  src="imagenes/Ensalada_de_calabaza.jpg"
+                  alt="Ensalada de Calabaza"
+                />
+              </a>
+              <h4>Ensalada de Calabaza / Pumpkin Salad</h4>
+              <p class="gris">
+                Calabaza sobre mix de espinaca y rúcula acompañada de dátiles, piñones, tomate cherry y queso feta, aderezada con nuestra salsa especial de pesto de albahaca.
+              </p>
+              <p>
+                Pumpkin on spinach and rocket mix accompanied by dates, pine nuts, cherry tomato and feta cheese, seasoned with our special sauce of basil pesto.
+              </p>
+              <p class="price">8,50€</p>
+          </div>
+          <div class="column ensaladas">
+              <a href="#tropical">
+                <img
+                class="imagen"
+                  src="imagenes/Capricho_tropical.jpg"
+                  alt="Capricho Tropical"
+                />
+              </a>
+              <h4>Capricho Tropical / Tropical Whim</h4>
+              <p class="gris">
+                Tataki de Salmón acompañado de aguacate, tomate cherry, papaya, arroz con coco, cebolla encurtida y wakame.
+              </p>
+              <p>
+                Salmon tataki accompanied by avocado, cherry tomato, papaya, coconut rice, pickled onion and wakame.
+              </p>
+              <p class="price">14,00€</p>
+            <p>* Extra Iberiam Ham, Chicken or Smoked Salmon. 2,00€ – Extra Supreme Salmon 2,50€ </p>
+          </div>
       </div>
-      <!-- BATIDOS -->
-      <div class="main_cont">
-        <div class="column batidos">
-            <a href="#resplandor">
-              <img
-                src="imagenes/Batido_resplandor.jpg"
-                alt="Resplandor"
-              />
-            </a>
-            <h4>Resplandor</h4>
-            <p class="gris">Aguacate, yogurt y zumo de naranja.</p>
-            <p>Avocado, yogurt, orange juice.</p>
-            <p class="price">S/M</p>
+        <!-- HAMBURGUESAS -->
+        <div class="main_cont">
+          <div class="column burguers">
+                <a href="#veggie">
+                  <img
+                  class="imagen"
+                    src="imagenes/Hamb_veggie.jpg"
+                    alt="Vegetariana"
+                  />
+              </a>
+              </a>
+              <h4>Vegetariana / Veggie</h4>
+              <p class="gris">
+                Hamburguesa de lentejas con cebolla caramelizada y mermelada natural de frutos rojos. Y para escoger: queso rulo de cabra o queso feta, ensalada o batata.
+              </p>
+              <p>
+                Lentil burger with caramelized onion, red fruits natural mermelade, goat cheese or feta cheese, with salad or sweet potatoes.
+              </p>
+              <p class="price">6,50€</p>
+          </div>
+          <div class="column burguers">
+              <a href="#carne">
+                  <img
+                  class="imagen"
+                    src="imagenes/Hamb_de_carne.jpg"
+                    alt="Carne"
+                  />
+                </a>
+              </a>
+              <h4>Carne / Meat</h4>
+              <p class="gris">
+                Hamburguesa de carne 100% vacuno / 200 grs con cebolla caramelizada.
+                Y para escoger: queso rulo de cabra o queso feta, ensalada o batata.
+              </p>
+              <p>
+                100% beef burger / 200 g with caramelized onion. To choose: goat cheese or feta cheese, salad or sweet potato.
+              </p>
+              <p class="price">8,50€</p>
+          </div>
+          <div class="column burguers">
+              <a href="#pollo">
+                <img
+                class="imagen"
+                  src="imagenes/Hamb_de_pollo.jpg"
+                  alt="Pollo Crunchy"
+                />
+              </a>
+              <h4>Pollo Crunchy / Crispy Chicken</h4>
+              <p class="gris">
+                Hamburguesa de pollo crujiente con un toque de curry sobre hummus de la casa, datiles, tomate y queso parmesano.
+              </p>
+              <p>
+                Crispy chicken burger with a touch of curry over house hummus, dates, tomato and Parmesan cheese.
+              </p>
+              <p class="price">9,50€</p>
+            <p>* Adición Huevo a la plancha +1,50€ – * Adición Aguacate +2,00€</p>
+          </div>
         </div>
-        <div class="column batidos">
-            <a href="#euforia">
-              <img
-                src="imagenes/Batido_euforia.jpg"
-                alt="Euforia"
-              />
-            </a>
-            <h4>Euforia</h4>
-            <p class="gris">Piña, hierbabuena, pepino, y zumo de naranja.</p>
-            <p>Pineapple, mint, cucumber, orange juice.</p>
-            <p class="price">4,30€</p>
+        <!-- ESPECIALES -->
+        <div class="main_cont">
+          <div class="column especiales">
+              <a href="#solomillo">
+                <img
+                class="imagen"
+                  src="imagenes/Solomillo_web-scaled.jpg"
+                  alt="Solomillo"
+                />
+              </a>
+              <h4>Solomillo / Sirloin Steak</h4>
+              <p class="gris">
+                Solomillo acompañado de variado de setas y parmentier de batata
+                roja.
+              </p>
+              <p>
+                Sirloin steak accompanied by a variety of mushrooms and red sweet potato parmentier.
+              </p>
+              <p class="price">17,50€</p>
+          </div>
+          <div class="column especiales">
+              <a href="#suprema">
+                <img
+                class="imagen"
+                  src="imagenes/suprema.jpg"
+                  alt="Suprema de salmón"
+                />
+              </a>
+              <h4>Suprema de Salmón / Salmon Suprema</h4>
+              <p class="gris">Suprema de salmón acompañada de verduras al wok y patata con salsa de romesco.</p>
+              <p>Salmon fillet with wok vegetables, potato and romesco sauce.
+              <p class="price">13,50€</p>
+          </div>
+          <div class="column especiales">
+              <a href="#bacalao">
+                <img
+                class="imagen"
+                  src="imagenes/Bacalao_suculenta.jpg"
+                  alt="Bacalao confitado"
+                />
+              </a>
+              <h4>Bacalao confitado / Confit Cod</h4>
+              <p class="gris">
+                Lascas de bacalao confitado con pisto de verduras y parmentier de
+                batata de Lanzarote, a la pimienta con un toque de nuez moscada.
+              </p>
+              <p>
+                Cod flakes confit with vegetable ratatouille and Lanzarote sweet potato parmentier, with pepper and a touch of nutmeg.
+              </p>
+              <p class="price">14,50€</p>
+          </div>
         </div>
-        <div class="column batidos">
-            <a href="#silvestre">
-              <img
-                src="imagenes/Batido_silvestre.jpg"
-                alt="Silvestre"
-              />
-            </a>
-            <h4>Silvestre</h4>
-            <p class="gris">Espinaca, jengibre, piña y zumo de naranja.</p>
-            <p>Spinach, ginger, pineapple, orange juice.</p>
-            <p class="price">4,30€</p>
+        <!-- POSTRES -->
+        <div class="main_cont">
+          <div class="column postres">
+              <a href="#zanahoria">
+                <img
+                class="imagen"
+                  src="imagenes/Tarta_de_zanahoria.jpg"
+                  alt="Tarta Zanahoria"
+                />
+              </a>
+              <h4>Tarta Zanahoria / Carrot Cake</h4>
+              <p class="price">4,50€</p>
+          </div>
+          <div class="column postres">
+              <a href="#queso">
+                <img
+                class="imagen"
+                  src="imagenes/Tarta_de_queso2.jpg"
+                  alt="Tarta Queso"
+                />
+              </a>
+              <h4>Tarta Queso / Cheese Cake</h4>
+              <p class="price">4,00€</p>
+          </div>
+          <div class="column postres">
+              <a href="#helado">
+                <img
+                class="imagen"
+                  src="imagenes/Brownie_con_helado.jpg"
+                  alt="Brownie con Helado de Vainilla"
+                />
+              </a>
+              <h4>Brownie con Helado de Vainilla / Brownie with Vanilla ice cream</h4>
+              <p class="price">4,50€</p>
+          </div>
         </div>
-        <div class="column batidos">
-            <a href="#mora">
-              <img
-                src="imagenes/Batido_mora_graciosa.jpg"
-                alt="Mora Graciosa"
-              />
-            </a>
-            <h4>Mora Graciosa</h4>
-            <p class="gris">Mora, plátano, leche o bebida vegetal.</p>
-            <p>Blackberry, banana, milk or vegetable drink.</p>
-            <p class="price">4,30€</p>
+        <!-- BATIDOS -->
+        <div class="main_cont">
+          <div class="column batidos">
+              <a href="#resplandor">
+                <img
+                class="imagen"
+                  src="imagenes/Batido_resplandor.jpg"
+                  alt="Resplandor"
+                />
+              </a>
+              <h4>Resplandor</h4>
+              <p class="gris">Aguacate, yogurt y zumo de naranja.</p>
+              <p>Avocado, yogurt, orange juice.</p>
+              <p class="price">S/M</p>
+          </div>
+          <div class="column batidos">
+              <a href="#euforia">
+                <img
+                class="imagen"
+                  src="imagenes/Batido_euforia.jpg"
+                  alt="Euforia"
+                />
+              </a>
+              <h4>Euforia</h4>
+              <p class="gris">Piña, hierbabuena, pepino, y zumo de naranja.</p>
+              <p>Pineapple, mint, cucumber, orange juice.</p>
+              <p class="price">4,30€</p>
+          </div>
+          <div class="column batidos">
+              <a href="#silvestre">
+                <img
+                class="imagen"
+                  src="imagenes/Batido_silvestre.jpg"
+                  alt="Silvestre"
+                />
+              </a>
+              <h4>Silvestre</h4>
+              <p class="gris">Espinaca, jengibre, piña y zumo de naranja.</p>
+              <p>Spinach, ginger, pineapple, orange juice.</p>
+              <p class="price">4,30€</p>
+          </div>
+          <div class="column batidos">
+              <a href="#mora">
+                <img
+                class="imagen"
+                  src="imagenes/Batido_mora_graciosa.jpg"
+                  alt="Mora Graciosa"
+                />
+              </a>
+              <h4>Mora Graciosa</h4>
+              <p class="gris">Mora, plátano, leche o bebida vegetal.</p>
+              <p>Blackberry, banana, milk or vegetable drink.</p>
+              <p class="price">4,30€</p>
+          </div>
+          <div class="column batidos">
+              <a href="#zumo">
+                <img
+                class="imagen"
+                  src="imagenes/Batido_resplandor.jpg"
+                  alt="Fresh Orange Juice"
+                />
+              </a>
+              <h4>Zumo de Naranja Natural / Fresh Orange Juice</h4>
+              <p>200ml o 400ml</p>
+              <p class="price">2,00€ / 4,00€</p>
+          </div>
         </div>
-        <div class="column batidos">
-            <a href="#zumo">
-              <img
-                src="imagenes/Batido_resplandor.jpg"
-                alt="Fresh Orange Juice"
-              />
-            </a>
-            <h4>Zumo de Naranja Natural / Fresh Orange Juice</h4>
-            <p>200ml o 400ml</p>
-            <p class="price">2,00€ / 4,00€</p>
+        <!-- BEBIDAS -->
+        <div class="column column_bebidas bebidas">
+          <div class="content">
+            <h4>Refrescos / Beverages</h4>
+              <p class="bebidas_title">Coca – Cola Normal / Fat</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Coca – Cola Zero</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Fanta limón / Fanta lemon</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Fanta Naranja / Fanta Orange</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Sprite</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Nestea</p> <p class="price">2,40€</p>
+              <p class="bebidas_title">Agua sin gas / Still water</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Agua con gas / Sparkling water</p> <p class="price">2,00€</p>
+          </div>
         </div>
-      </div>
-      <!-- BEBIDAS -->
-      <div class="column column_bebidas bebidas">
-        <div class="content">
-          <h4>Refrescos / Beverages</h4>
-            <p class="bebidas_title">Coca – Cola Normal / Fat</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Coca – Cola Zero</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Fanta limón / Fanta lemon</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Fanta Naranja / Fanta Orange</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Sprite</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Nestea</p> <p class="price">2,40€</p>
-            <p class="bebidas_title">Agua sin gas / Still water</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Agua con gas / Sparkling water</p> <p class="price">2,00€</p>
+        <div class="column column_bebidas bebidas">
+          <div class="content">
+            <h4>Cervezas / Beers</h4>
+              <p class="bebidas_title">Alhambre Caña</p> <p class="price">1,80€</p>
+              <p class="bebidas_title">Alhambra Jarra / Yard</p> <p class="price">3,60€</p>
+              <p class="bebidas_title">Alhambra Sin</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Dorada Especial</p> <p class="price">2,40€</p>
+              <p class="bebidas_title">Alhambra Reserva roja</p> <p class="price">2,40€</p>
+              <p class="bebidas_title">Alhambra 1925</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Tropical Limón</p> <p class="price">2,00€</p>
+          </div>
         </div>
-      </div>
-      <div class="column column_bebidas bebidas">
-        <div class="content">
-          <h4>Cervezas / Beers</h4>
-            <p class="bebidas_title">Alhambre Caña</p> <p class="price">1,80€</p>
-            <p class="bebidas_title">Alhambra Jarra / Yard</p> <p class="price">3,60€</p>
-            <p class="bebidas_title">Alhambra Sin</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Dorada Especial</p> <p class="price">2,40€</p>
-            <p class="bebidas_title">Alhambra Reserva roja</p> <p class="price">2,40€</p>
-            <p class="bebidas_title">Alhambra 1925</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Tropical Limón</p> <p class="price">2,00€</p>
+        <div class="column column_bebidas bebidas">
+          <div class="content">
+            <h4>Vinos / Wines</h4>
+              <p class="bebidas_title">Copa Princesa Ico / Cup</p> <p class="price">3,75€</p>
+              <p class="bebidas_title">Copa Vega de Yuco / Cup</p> <p class="price">3,75€</p>
+              <p class="bebidas_title">Copa Lilium / Cup</p> <p class="price">3,75€</p>
+              <p class="bebidas_title">Copa Lacort / Cup</p> <p class="price">3,75€</p>
+              <p class="bebidas_title">Botella Princesa Ico / Bottle</p> <p class="price">18,00€</p>
+              <p class="bebidas_title">Botella Yuco de Vega / Bottle</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Botella Lacort / Bottle</p> <p class="price">18,00€</p>
+              <p class="bebidas_title">Botella Lilium / Bottle</p> <p class="price">18,00€</p>
+          </div>
         </div>
-      </div>
-      <div class="column column_bebidas bebidas">
-        <div class="content">
-          <h4>Vinos / Wines</h4>
-            <p class="bebidas_title">Copa Princesa Ico / Cup</p> <p class="price">3,75€</p>
-            <p class="bebidas_title">Copa Vega de Yuco / Cup</p> <p class="price">3,75€</p>
-            <p class="bebidas_title">Copa Lilium / Cup</p> <p class="price">3,75€</p>
-            <p class="bebidas_title">Copa Lacort / Cup</p> <p class="price">3,75€</p>
-            <p class="bebidas_title">Botella Princesa Ico / Bottle</p> <p class="price">18,00€</p>
-            <p class="bebidas_title">Botella Yuco de Vega / Bottle</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Botella Lacort / Bottle</p> <p class="price">18,00€</p>
-            <p class="bebidas_title">Botella Lilium / Bottle</p> <p class="price">18,00€</p>
+        <div class="column column_bebidas bebidas">
+          <div class="content">
+            <h4>Cócteles / Coctails</h4>
+            <p class="bebidas_title">Mimosa</p>
+              <p>Mezcla suave y refrescante, de zumo de
+                naranja natural y cava.</p>
+              <p class="price">4,50€</p>
+          </div>
         </div>
-      </div>
-      <div class="column column_bebidas bebidas">
-        <div class="content">
-          <h4>Cócteles / Coctails</h4>
-          <p class="bebidas_title">Mimosa</p>
-            <p>Mezcla suave y refrescante, de zumo de
-              naranja natural y cava.</p>
-            <p class="price">4,50€</p>
+        <div class="column column_bebidas bebidas">
+          <div class="content">
+            <h4>Bebidas Calientes / Hot Drinks</h4>
+            <p class="bebidas_title">Ristretto</p> <p class="price">1,20€</p>
+              <p class="bebidas_title">Expreso</p> <p class="price">1,20€</p>
+              <p class="bebidas_title">Café Solo / Black Coffee</p> <p class="price">1,20€</p>
+              <p class="bebidas_title">Leche / Milk</p> <p class="price">1,00€</p>
+              <p class="bebidas_title">Cortado / Short with Milk</p> <p class="price">1,30€</p>
+              <p class="bebidas_title">Largo cortado / Long with Milk</p> <p class="price">1,50€</p>
+              <p class="bebidas_title">Café con Leche / White Cofee</p> <p class="price">1,80€</p>
+              <p class="bebidas_title">Café con Leche Largo / Long White Coffee</p> <p class="price">1,50€</p>
+              <p class="bebidas_title">Café Latte</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Leche y Leche Corto / Short Milk and Milk</p> <p class="price">1,30€</p>
+              <p class="bebidas_title">Leche y Leche Largo / Long Milk and Milk</p> <p class="price">1,70€</p>
+              <p class="bebidas_title">Cappuchino</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Americano / American Coffee</p> <p class="price">1,50€</p>
+              <p class="bebidas_title">Barraquito</p> <p class="price">4,50€</p>
+              <p class="bebidas_title">Café Irlandés / Irish coffee</p> <p class="price">1,20€</p>
+              <p class="bebidas_title">Bombón Corto / Short Bombón</p> <p class="price">1,30€</p>
+              <p class="bebidas_title">Bombón Largo / Long Bombón</p> <p class="price">1,50€</p>
+              <p class="bebidas_title">Cola Cao</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Chocolate Extra Dark</p> <p class="price">2,50€</p>
+              <p class="bebidas_title">Iced Coffe</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Mocca</p> <p class="price">2,00€</p>
+              <p class="bebidas_title">Té/Infusiones / Tea</p>
+              <p>Té rojo, Té English Breakfast, Té verde, Té verde mango, Té Chai Masala. Infusion de menta y Rooibos floral</p>
+              <p class="price">1,70€</p>
+              <p class="bebidas_title">Infusión Jengibre Fresco</p> <p class="price">1,90€</p>
+              <p class="bebidas_title">Iced Rooibos Maracuya</p> <p class="price">2,00€</p>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="column column_bebidas bebidas">
-        <div class="content">
-          <h4>Bebidas Calientes / Hot Drinks</h4>
-          <p class="bebidas_title">Ristretto</p> <p class="price">1,20€</p>
-            <p class="bebidas_title">Expreso</p> <p class="price">1,20€</p>
-            <p class="bebidas_title">Café Solo / Black Coffee</p> <p class="price">1,20€</p>
-            <p class="bebidas_title">Leche / Milk</p> <p class="price">1,00€</p>
-            <p class="bebidas_title">Cortado / Short with Milk</p> <p class="price">1,30€</p>
-            <p class="bebidas_title">Largo cortado / Long with Milk</p> <p class="price">1,50€</p>
-            <p class="bebidas_title">Café con Leche / White Cofee</p> <p class="price">1,80€</p>
-            <p class="bebidas_title">Café con Leche Largo / Long White Coffee</p> <p class="price">1,50€</p>
-            <p class="bebidas_title">Café Latte</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Leche y Leche Corto / Short Milk and Milk</p> <p class="price">1,30€</p>
-            <p class="bebidas_title">Leche y Leche Largo / Long Milk and Milk</p> <p class="price">1,70€</p>
-            <p class="bebidas_title">Cappuchino</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Americano / American Coffee</p> <p class="price">1,50€</p>
-            <p class="bebidas_title">Barraquito</p> <p class="price">4,50€</p>
-            <p class="bebidas_title">Café Irlandés / Irish coffee</p> <p class="price">1,20€</p>
-            <p class="bebidas_title">Bombón Corto / Short Bombón</p> <p class="price">1,30€</p>
-            <p class="bebidas_title">Bombón Largo / Long Bombón</p> <p class="price">1,50€</p>
-            <p class="bebidas_title">Cola Cao</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Chocolate Extra Dark</p> <p class="price">2,50€</p>
-            <p class="bebidas_title">Iced Coffe</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Mocca</p> <p class="price">2,00€</p>
-            <p class="bebidas_title">Té/Infusiones / Tea</p>
-            <p>Té rojo, Té English Breakfast, Té verde, Té verde mango, Té Chai Masala. Infusion de menta y Rooibos floral</p>
-            <p class="price">1,70€</p>
-            <p class="bebidas_title">Infusión Jengibre Fresco</p> <p class="price">1,90€</p>
-            <p class="bebidas_title">Iced Rooibos Maracuya</p> <p class="price">2,00€</p>
-          </p>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </main>
     <!-- END GRID -->
     <footer>
         <div class="footer">
@@ -1498,8 +1550,7 @@
         <div>
       </div>
     </section>
-
-    <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="javascript/loader.js"></script>
+    <script type="text/javascript" src="javascript/index.js"></script>
   </body>
 </html>

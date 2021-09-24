@@ -183,7 +183,6 @@ footer h2 {
 .fab_boton {
   position: fixed;
   bottom: 30px;
-  z-index: 10;
 }
 
 .fa-phone-alt {
@@ -356,12 +355,12 @@ footer h2 {
 .barra_sticky {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 2;
 }
 
 .hero {
   height: 50vh;
-  background-image: url("imagenes/meson.jpg");
+  background-image: url("../imagenes/meson.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -377,13 +376,7 @@ footer h2 {
   text-align: center;
   font-size: 2.1rem;
   font-weight: 200;
-  padding: 40px 30px 20px;
-}
-
-@media only screen and (min-width: 700px) {
-  .hero h2 {
-    padding-top: 60px;
-  }
+  padding: 9vh 30px 20px;
 }
 
 .corazon {
@@ -392,6 +385,11 @@ footer h2 {
   font-size: 2.5rem;
   width: 100%;
   padding: 20px 0 5px;
+}
+
+.amor {
+  width: 100%;
+  text-align: center;
 }
 
 /* Sección de mapa y formulario */
