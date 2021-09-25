@@ -44,6 +44,7 @@ a {
   font-weight: bold;
   padding-top: 8px;
 }
+
 .llamar {
   color: #9e2372;
 }
@@ -251,6 +252,10 @@ footer h2 {
   height: 65vh;
 }
 
+.imagen {
+  box-shadow: 1px 1px #9e2372;
+}
+
 /* No mostrar imágenes modales a partir de pantallas mayores de 700px */
 @media only screen and (min-width: 700px) {
   .no_mostrar {
@@ -262,10 +267,15 @@ footer h2 {
   .hero h2 {
     padding-top: 80px;
   }
+  .btn,
+  .reservar {
+    font-size: 16px;
+    padding: 8px;
+  }
 }
 
 .modal {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #1b171ae3;
   position: fixed;
   top: 0;
   right: 0;
@@ -274,6 +284,7 @@ footer h2 {
   opacity: 0;
   pointer-events: none;
   transition: all 1s;
+  z-index: 99;
 }
 
 .position {
@@ -337,79 +348,4 @@ footer h2 {
 #zumo:target {
   opacity: 1;
   pointer-events: auto;
-}
-
-/* PÁGINA RESERVAS */
-/* PÁGINA RESERVAS */
-/* PÁGINA RESERVAS */
-/* PÁGINA RESERVAS */
-/* PÁGINA RESERVAS */
-/* PÁGINA RESERVAS */
-/* PÁGINA RESERVAS */
-/* PÁGINA RESERVAS */
-/* PÁGINA RESERVAS */
-/* PÁGINA RESERVAS */
-/* PÁGINA RESERVAS */
-/* PÁGINA RESERVAS */
-
-.barra_sticky {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-.hero {
-  height: 50vh;
-  background-image: url("../imagenes/meson.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-}
-
-.hero_text {
-  background-color: #9e2373d5;
-  min-height: 100%;
-}
-
-.hero h2 {
-  text-align: center;
-  font-size: 2.1rem;
-  font-weight: 200;
-  padding: 9vh 30px 20px;
-}
-
-.corazon {
-  color: white;
-  display: block;
-  font-size: 2.5rem;
-  width: 100%;
-  padding: 20px 0 5px;
-}
-
-.amor {
-  width: 100%;
-  text-align: center;
-}
-
-/* Sección de mapa y formulario */
-/* GOOGLE MAPS */
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 55%;
-  position: relative;
-  height: 0;
-}
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-@media only screen and (min-width: 800px) {
-  .map-responsive {
-    padding-bottom: 30%;
-  }
 }
