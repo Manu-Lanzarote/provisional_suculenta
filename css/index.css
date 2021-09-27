@@ -131,7 +131,7 @@ footer {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 20px 0 100px;
+  padding: 50px 0 100px;
   line-height: 1.5rem;
   background-color: #9e2372;
 }
@@ -218,9 +218,6 @@ footer h2 {
   }
   .cont_fab {
     display: none;
-  }
-  footer {
-    padding: 30px;
   }
 }
 

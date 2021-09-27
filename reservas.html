@@ -17,6 +17,25 @@
    ></script>
     <title>Reservas</title>
     <meta name="description" content="Suculenta Café. Booking / Reservas" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./imagenes/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./imagenes/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./imagenes/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./imagenes/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./imagenes/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./imagenes/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./imagenes/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./imagenes/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./imagenes/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./imagenes/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./imagenes/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imagenes/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Fin de Favicon -->
 </head>
 <body>
     <header class="barra_sticky">
@@ -34,46 +53,85 @@
       </div>
     </div>
 
-    <main>
+    
       <section class="map_form">
+
         <!-- FORMULARIO  CON formsubmit-->
-        <div class="formulario">
-          <!-- <form id="form" action="https://formsubmit.co/madrid29@hotmail.com" method="POST">
-              <H1>CONTACTO</H1>
-              <p>Recibirás un correo confirmando tu reserva en breve</p>
-              <input type="email" id="t2" name="email" placeholder="Introduce tu correo electrónico" required title="Email incorrecto"
-              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
-              <input type="hidden" name="_subject" value="Web Suculenta Café ">
-              <input type="hidden" name="_next" value="https://suculentacafe.es/">
+          <!-- <div class="formulario">
+            <form id="form" action="https://formsubmit.co/madrid29@hotmail.com" method="POST">
+                <h1>CONTACTO</h1>
+                <p>Recibirás un correo confirmando tu reserva en breve</p>
+                <input type="email" id="t2" name="email" placeholder="Introduce tu correo electrónico" required title="Email incorrecto"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+                <input type="hidden" name="_subject" value="Web Suculenta Café ">
+                <input type="hidden" name="_next" value="https://suculentacafe.es/">
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit" id="submit" onclick="enviar()">Enviar</button>
+            </form>
+          </div> -->
+
+      <div id="logotipo">
+        <img  src="./imagenes/suculenta.png" alt="Logotipo Suculenta Café">
+      </div>
+    <main>
+        <section class="sec_reservas">
+          <div class="container">
+            <h1>Reservas / Booking</h1>
+            <p>(Recibirá un email confirmando su reserva)</p>
+            <p>(You will receive an email confirming your reservation)</p>
+            <form class="formulario" id="form" action="https://formsubmit.co/madrid29@hotmail.com" method="POST">
+              <label for="nombre">Nombre y apellidos</label>
+              <input type="text" id="nombre" name="Nombre" placeholder="Su nombre / Your name..." required>
+  
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email" placeholder="email" required><br>
+  
+              <label for="phone">Teléfono / Phone</label>
+              <input type="tel" required id="phone" name="Phone" placeholder="e.g. +34 555 555 555"><br>
+  
+              <label for="personas">Num. de personas / Quantity of persons (Max. 10) </label>
+              <select name="Personas" id="personas" required>
+                <option value="">Select&nbsp;&nbsp;&nbsp;</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select><br>
+          
+              <label for="requerimientos">Subject</label>
+              <textarea id="requerimientos" name="Requerimientos" placeholder="¿Tiene alguna solicitud especial? / Do you have any special requests?" rows="8" maxlength="256"></textarea>
+  
+              <label for="fecha">Fecha / Date:</label>
+              <input type="date" id="fecha" name="Fecha" required>
+  
+              <label for="hora">Hora / time:</label>
+              <select name="Hora" id="hora" required>
+                <option value="">Select&nbsp;&nbsp;&nbsp;</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+              </select>
+
+              <input type="hidden" name="_subject" value="Nueva reserva desde suculentacafe.es">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
               <input type="hidden" name="_captcha" value="false">
-              <button type="submit" id="submit" onclick="enviar()">Enviar</button>
-          </form> -->
-        </div>
-        <br><br><br>
-        <hr>
-        <br><br><br>
-        <!-- FORMULARIO W3SCHOOLS -->
-        <div class="container">
-          <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-        
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
-          </form>
-        </div>
+          
+              <input type="submit" value="RESERVAR / BOOK">
+            </form>
+          </div>
+        </section>
+        <section class="imagen_form">
+        </section>
     </main>
 
       <!-- GOOGLE MAPS -->
@@ -332,10 +390,5 @@
     </div>
   </section> 
   </footer>
-  <script>
-      function enviar(){
-          alert("Enviando el formulario")
-      }
-  </script>
 </body>
 </html>

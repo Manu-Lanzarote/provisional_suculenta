@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <!-- Estilos del loader -->
     <link rel="stylesheet" type="text/css" href="css/loader.css" />
+    <!-- Estilos de cookies -->
+    <link rel="stylesheet" type="text/css" href="css/cookie.css" />
     <!-- ROBOTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +21,25 @@
    ></script>
     <title>Suculenta Café</title>
     <meta name="description" content="Suculenta Café. Convertimos el amor en alimento. Disfruta de una carta con opciones balanceadas, ricas en sabor y con una presentación llena de color." />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./imagenes/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="./imagenes/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="./imagenes/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="./imagenes/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="./imagenes/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="./imagenes/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="./imagenes/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="./imagenes/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="./imagenes/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="./imagenes/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="./imagenes/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./imagenes/favicon/favicon-16x16.png">
+      <link rel="manifest" href="/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+    <!-- Fin de Favicon -->
   </head>
   <body>
 
@@ -38,7 +59,6 @@
           <h3 class="llamar telefono" id="cabecera"><i class="fas fa-phone"></i>+34 928 590 707</h3>
           <a href="reservas.html" class="llamar "><button class="reservar">Reservas / Booking</button></a>
         </div>
-        
       </div>
       <div class="myBtnContainer">
         <button class="btn active" id="menu" onclick="filterSelection('all')">
@@ -76,9 +96,10 @@
         </button>
       </div>
     </header>
+    
     <!-- Portfolio Gallery Grid -->
-    <!-- TOSTADAS -->
       <main>
+        <!-- TOSTADAS -->
         <div class="main_cont">
           <div class="column tostadas">
               <a href="#t_aguacate">
@@ -1550,7 +1571,25 @@
         <div>
       </div>
     </section>
+
+    <!-- BANER DE POLÍTICA DE COOKIES -->
+    <section>
+      <div id="cookieNotice" class="light display-left" style="display: none;">
+        <div id="closeIcon" style="display: none;">
+        </div>
+        <div class="content-wrap">
+            <div class="msg-wrap">
+                <p>Utilizamos cookies para asegurar que damos la mejor experiencia al usuario en nuestro sitio web. Si continúa utilizando este sitio asumiremos que está de acuerdo.<br><a id="saber" href="/privacy-policy">Saber más</a></p>
+                <div class="btn-wrap">
+                    <button class="btn-primary" onclick="acceptCookieConsent();">¡De acuerdo!</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN DE BANER DE POLÍTICA DE COOKIES -->
     <script type="text/javascript" src="javascript/loader.js"></script>
     <script type="text/javascript" src="javascript/index.js"></script>
+    <script type="text/javascript" src="javascript/cookie_consent.js"></script>
   </body>
 </html>
