@@ -7,7 +7,7 @@
 }
 
 .hero {
-  height: 60vh;
+  height: 350px;
   background-image: url("../imagenes/meson.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -25,9 +25,9 @@
 
 .hero h2 {
   text-align: center;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: 200;
-  padding: 12vh 30px 20px;
+  padding: 40px 30px 20px;
 }
 
 .corazon {
@@ -56,7 +56,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 20px 0;
+  margin-top: 5px;
 }
 
 /* Sección de mapa y formulario */
@@ -65,7 +65,7 @@ main {
   overflow: hidden;
   padding-bottom: 55%;
   position: relative;
-  height: 0;
+  height: 70vh;
 }
 .map-responsive iframe {
   left: 0;
@@ -100,7 +100,12 @@ main {
 #logotipo {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 30px;
+  width: 100%;
+}
+
+#logotipo img {
+  width: 100px;
 }
 
 /* FORMULARIO DE RESERVAS */
@@ -121,7 +126,7 @@ main {
 }
 
 .formulario {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 #requerimientos {
@@ -132,7 +137,7 @@ input[type="text"],
 textarea {
   width: 100%;
   min-width: 100%;
-  padding: 3px;
+  padding: 6px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -142,16 +147,17 @@ textarea {
 }
 
 input[type="email"] {
+  width: 50%;
   margin-top: 6px;
   margin-bottom: 6px;
-  padding: 3px;
+  padding: 6px;
 }
 
-.tel {
-  width: 20%;
+input[type="tel"] {
+  width: 50%;
   margin-top: 6px;
   margin-bottom: 6px;
-  padding: 3px;
+  padding: 6px;
 }
 
 input[type="date"],
@@ -162,7 +168,7 @@ select {
   color: gray;
 }
 
-input[type="submit"] {
+/* input[type="submit"] {
   display: block;
   width: 100%;
   background-color: #9e2372;
@@ -170,12 +176,30 @@ input[type="submit"] {
   border: 1px solid #fff;
   cursor: pointer;
   font-size: 14px;
-  padding: 10px;
+  padding: 12px;
   margin: 20px 0 5px;
   border-radius: 7px;
 }
-
 input[type="submit"]:hover {
+  color: #9e2372;
+  background-color: #ffffff;
+  transition: 0.5s;
+  border: 1px solid #9e2372;
+} */
+
+.submit_button {
+  display: block;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #9e2372;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+.submit_button:hover {
   color: #9e2372;
   background-color: #ffffff;
   transition: 0.5s;
@@ -187,5 +211,5 @@ input[type="submit"]:hover {
   border-radius: 5px;
   background-color: transparent;
   padding: 20px;
-  margin: 20px 0;
+  margin-top: 5px;
 }

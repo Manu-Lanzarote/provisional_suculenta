@@ -16,6 +16,7 @@ header {
   top: -50px;
   background: #fce4ec;
   padding: 5px;
+  z-index: 5;
 }
 
 .logo {
@@ -70,6 +71,19 @@ a {
   display: none; /* Hide columns by default */
 }
 
+.cont_imagen {
+  position: relative;
+}
+
+.cont_imagen i {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.459);
+  cursor: pointer;
+}
+
 img {
   max-width: 100%;
 }
@@ -87,9 +101,27 @@ img {
   border: 1px solid #fff;
   cursor: pointer;
   font-size: 14px;
-  padding: 6px;
+  padding: 8px;
   margin: 2px 0;
   border-radius: 7px;
+}
+
+/* Botones de menú */
+.reservar2 {
+  background-color: #dddc82;
+  color: #9e2372;
+  border: 1px solid #9e2372;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 8px;
+  margin: 2px 0;
+  border-radius: 7px;
+}
+
+.reservar2:hover {
+  background-color: #9e2372;
+  color: #bbd2b5;
+  border: 1px solid #dddc82;
 }
 
 /* Add a grey background color on mouse-over */
@@ -110,20 +142,48 @@ h4 {
 .gris {
   color: #00000095;
 }
+/* Ocultar icono de imágenes en dispositivos grandes */
+.ocultar {
+  display: inherit;
+}
+@media only screen and (min-width: 699px) {
+  .ocultar {
+    display: none;
+  }
+}
+
+/* Bebidas */
+.main_drinks {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 50% 50%;
+  margin: 0 5%;
+}
+
+.titulo_bebidas {
+  text-align: center;
+  margin-top: 20px;
+  color: #9e2372;
+}
 
 .price {
   color: #9e237298;
   font-weight: 800;
 }
 
-/* Bebidas */
 .bebidas_title {
   font-weight: bold;
   color: #00000095;
+  line-height: 1.5;
 }
-.column_bebidas {
-  width: 100%;
-  text-align: center;
+.drinks {
+  font-size: 1.1rem;
+  color: #42b67f;
+  padding-bottom: 5px;
+}
+
+#bebidas {
+  width: 90vw;
 }
 
 /* footer */
@@ -188,9 +248,9 @@ footer h2 {
 
 .fa-phone-alt {
   color: #9e2372;
-  background-color: #fce4ec;
+  background-color: #dddc82;
   font-size: 30px;
-  padding: 10px;
+  padding: 13px;
   border-radius: 50%;
   border: 2px solid #9e2372;
 }
@@ -218,6 +278,12 @@ footer h2 {
   }
   .cont_fab {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .main_drinks {
+    grid-template-columns: 25% 25% 25% 25%;
   }
 }
 
@@ -267,7 +333,7 @@ footer h2 {
   .btn,
   .reservar {
     font-size: 16px;
-    padding: 8px;
+    padding: 10px;
   }
 }
 
@@ -294,6 +360,21 @@ footer h2 {
 
 .cerrar {
   color: #9e2372;
+}
+
+.cont_img_modal {
+  position: relative;
+}
+.cont_img_modal p {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: #9e2372;
+  font-size: 1.2rem;
+}
+
+.fa-times {
+  font-size: 2rem;
 }
 
 /* TARGETS POLÍTICAS */
