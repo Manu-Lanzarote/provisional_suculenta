@@ -153,17 +153,14 @@ h4 {
 }
 
 /* Bebidas */
+.cont_bebidas {
+  margin-top: 30px;
+}
+
 .main_drinks {
   display: grid;
   justify-content: space-between;
   grid-template-columns: 50% 50%;
-  margin: 0 5%;
-}
-
-.titulo_bebidas {
-  text-align: center;
-  margin-top: 20px;
-  color: #9e2372;
 }
 
 .price {
@@ -312,11 +309,7 @@ footer h2 {
 /* Máxima anchura para los modales de imágenes */
 .max_ancho {
   max-width: 400px;
-  height: 65vh;
-}
-
-.imagen {
-  box-shadow: 1px 1px #9e2372;
+  height: auto;
 }
 
 /* No mostrar imágenes modales a partir de pantallas mayores de 700px */

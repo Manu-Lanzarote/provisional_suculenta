@@ -43,6 +43,22 @@
   text-align: center;
 }
 
+.res_love {
+  background-color: white;
+  color: #9e2372;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px;
+  margin: 2px 0;
+  border-radius: 7px;
+}
+.res_love:hover {
+  background-color: #9e2372;
+  color: white;
+  border: 1px solid white;
+}
+
 main {
   display: flex;
   margin: 5%;
