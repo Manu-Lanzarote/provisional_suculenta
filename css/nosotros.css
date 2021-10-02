@@ -4,6 +4,10 @@
   z-index: 2;
 }
 
+.reservar2 {
+  margin-right: 8px;
+}
+
 /* Sección Diana */
 .diana {
   background-color: #9e2372;
@@ -14,8 +18,11 @@
 
 .container {
   background-color: #fce4ec;
+  display: flex;
+  align-items: center;
   padding: 20px 2rem;
   position: relative;
+  min-height: 420px;
 }
 
 .column_left {
@@ -29,11 +36,6 @@
 
 .column_left h2 {
   color: #9e2372;
-  padding-bottom: 10px;
-}
-
-.our {
-  padding-top: 20px;
 }
 
 .column_left p {
@@ -71,8 +73,7 @@
 .abajo {
   padding: 50px;
 }
-
-.abajo h2 {
+.our {
   color: #9e2372;
   padding-bottom: 10px;
 }
@@ -145,6 +146,12 @@
 @media only screen and (min-width: 901px) {
   .diana_mov {
     display: none;
+  }
+  .column_left {
+    padding: 70px;
+  }
+  .textos {
+    padding: 0 20%;
   }
 }
 

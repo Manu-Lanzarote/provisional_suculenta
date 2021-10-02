@@ -21,8 +21,9 @@ header {
 
 .logo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 7%;
 }
 #logo {
   width: 60px;
@@ -46,19 +47,15 @@ a {
   padding-top: 8px;
 }
 
-.llamar {
-  color: #9e2372;
-}
-
 #menu {
   width: 100%;
   background-color: #9e2372;
 }
 .myBtnContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-flow: row wrap;
-  padding-top: 10px;
+  padding: 0px 5% 0;
 }
 
 .main_cont {
@@ -116,6 +113,7 @@ img {
   padding: 8px;
   margin: 2px 0;
   border-radius: 7px;
+  min-width: 82px;
 }
 
 .reservar2:hover {
@@ -134,13 +132,19 @@ img {
   border: 1px solid #9e2372;
 }
 
+.bloque_bandera {
+  display: flex;
+  align-items: center;
+}
+
+.flag {
+  width: 35px;
+  margin: 8px 0px 0 30px;
+}
+
 hr,
 h4 {
   color: #9e2372;
-}
-
-.gris {
-  color: #00000095;
 }
 /* Ocultar icono de imágenes en dispositivos grandes */
 .ocultar {
@@ -155,6 +159,7 @@ h4 {
 /* Bebidas */
 .cont_bebidas {
   margin-top: 30px;
+  padding: 0 5%;
 }
 
 .main_drinks {
@@ -250,16 +255,14 @@ footer h2 {
   padding: 13px;
   border-radius: 50%;
   border: 2px solid #9e2372;
+  min-width: 60px;
 }
 
 .proweb {
   font-size: 14px;
   margin: 0 5px;
-}
-.proweb:hover {
   color: pink;
 }
-
 /* Media queries */
 @media only screen and (min-width: 600px) {
   .main_cont {
@@ -288,6 +291,12 @@ footer h2 {
   #cabecera {
     display: none;
   }
+  .cont_bebidas {
+    padding: 0 0px;
+  }
+  header {
+    padding: 0px;
+  }
 }
 
 /* ESTILOS DE LOS MODALES */
@@ -304,6 +313,10 @@ footer h2 {
   position: relative;
   height: 70vh;
   overflow-y: scroll;
+}
+
+.cerrar {
+  color: black;
 }
 
 /* Máxima anchura para los modales de imágenes */
@@ -351,23 +364,16 @@ footer h2 {
   background-color: rgb(224, 224, 224);
 }
 
-.cerrar {
-  color: #9e2372;
-}
-
 .cont_img_modal {
   position: relative;
 }
-.cont_img_modal p {
-  position: absolute;
-  top: 20px;
-  left: 10px;
-  color: #9e2372;
-  font-size: 1.2rem;
-}
 
 .fa-times {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 /* TARGETS POLÍTICAS */

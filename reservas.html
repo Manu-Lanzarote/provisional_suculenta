@@ -43,14 +43,18 @@
             <div class="logo">
               <a href="index.html"><img src="imagenes/suculenta.png" alt="logo" id="logo" /></a>
               <h3 class="llamar telefono" id="cabecera"><i class="fas fa-phone"></i>+34 928 590 707</h3>
-              <a href="index.html" class="llamar"><button class="reservar2">Menú / Menu</button></a>
+              <div class="bloque_bandera">
+                <a href="index.html" class="llamar"><button class="reservar2">Menú</button></a>
+                <a href="reservas_en.html"><img  class="flag" src="imagenes/banderas/reino-unido.png" alt="Reino Unido"/></a>
+              </div>
             </div>
     </header>
     <div class="hero">
       <div class="hero_text">
-        <h2>Convertimos el amor en alimento<i class="far fa-heart corazon"></i>We turn love into food</h2>
+        <h2>Convertimos el amor en alimento</h2>
+        <i class="far fa-heart corazon"></i>
         <div class="amor"><a href="nosotros.html">
-          <button class="res_love">Nuestra Historia / Our Story</button></a>
+          <button class="res_love">Nuestra Historia</button></a>
         </div>
       </div>
     </div>
@@ -61,20 +65,20 @@
       <main>
         <section class="sec_reservas">
           <div class="container">
-            <h1>Reservas / Booking</h1>
+            <h1>Reservas</h1>
             <form class="formulario" id="form" action="https://formsubmit.co/madrid29@hotmail.com" method="POST">
               <label for="nombre">Nombre y apellidos</label>
-              <input type="text" id="nombre" name="Nombre" placeholder="Su nombre / Your name..." required>
+              <input type="text" id="nombre" name="Nombre" placeholder="Su nombre" required>
   
-              <label for="email">Email</label>
-              <input type="email" id="email" name="Email" placeholder="email" required><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="Email" placeholder="Email" required><br>
   
-              <label for="phone">Teléfono / Phone</label>
+              <label for="phone">Teléfono:</label>
               <input type="tel" required id="phone" name="Phone" placeholder="e.g. +34 555 555 555"><br>
   
-              <label for="personas">Num. de personas / Quantity of persons (Max. 10) </label>
+              <label for="personas">Número de personas (Max. 10):</label>
               <select name="Personas" id="personas" required>
-                <option value="">Select&nbsp;&nbsp;&nbsp;</option>
+                <option value="">Seleccionar&nbsp;&nbsp;&nbsp;</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
@@ -86,15 +90,15 @@
                 <option value="10">10</option>
               </select><br>
           
-              <label for="requerimientos">Subject</label>
-              <textarea id="requerimientos" name="Requerimientos" placeholder="¿Tiene alguna solicitud especial? / Do you have any special requests?" rows="8" maxlength="256"></textarea>
+              <label for="requerimientos">Asunto</label>
+              <textarea id="requerimientos" name="Requerimientos" placeholder="¿Tiene alguna solicitud especial?" rows="8" maxlength="256"></textarea>
   
-              <label for="fecha">Fecha / Date:</label>
+              <label for="fecha">Fecha:</label>
               <input type="date" id="fecha" name="Fecha" required><br>
   
-              <label for="hora">Hora / time:</label>
+              <label for="hora">Hora:</label>
               <select name="Hora" id="hora" required>
-                <option value="">Select&nbsp;&nbsp;&nbsp;</option>
+                <option value="">Seleccionar&nbsp;&nbsp;&nbsp;</option>
                 <option value="09:00">09:00</option>
                 <option value="10:00">10:00</option>
                 <option value="11:00">11:00</option>
@@ -109,7 +113,8 @@
               <input type="hidden" name="_next" value="https://restaurante.proweb10.com/gracias.html">
               <input type="hidden" name="_captcha" value="false">
               <!-- <input type="submit" value="RESERVAR / BOOK"> -->
-              <button type="submit" value="RESERVAR / BOOK" class="submit_button">RESERVAR / BOOK</button>
+              <button type="submit" value="RESERVAR / BOOK" class="submit_button">RESERVAR</button>
+              <p id="legal_form">cidlanzarote.com te informa que los datos de carácter personal que nos proporciones rellenando el presente formulario serán tratados por Kevin Charles Turner (Buceo CID Lanzarote) como responsable de esta web. La finalidad de la recogida y tratamiento de los datos personales que te solicitamos es para gestionar la solicitud que realizas en este formulario de contacto. Legitimación: Al marcar la casilla de aceptación, estás dando tu legítimo consentimiento para que tus datos sean tratados conforme a las finalidades de este formulario descritas en la política de privacidad. Como usuario e interesado te informamos que los datos que nos facilitas estarán ubicados en los servidores de MailChimp, (proveedor de servicios de marketing por correo electrónico) en la UE, garantizando unos niveles de seguridad adecuados. El hecho de que no introduzcas los datos de carácter personal que aparecen en el formulario como obligatorios podrá tener como consecuencia que no pueda atender tu solicitud. Podrás ejercer tus derechos de acceso, rectificación, limitación y suprimir los datos en info@cidlanzarote.com así como el Derecho a presentar una reclamación ante una autoridad de control. Puedes consultar la información adicional y detallada sobre Protección de Datos en nuestra página web: www.cidlanzarote.com así como consultar nuestra política de privacidad.</p>
             </form>
           </div>
         </section>
@@ -124,20 +129,20 @@
 
     <footer>
         <div class="footer">
-          <h2>Abierto / Open</h2>
-          <p>Miércoles a Lunes / Wednesday to Monday</p>
+          <h2>Abierto</h2>
+          <p>Miércoles a Lunes</p>
           <p>09:00 am - 17:00 pm</p>
           <br>
-          <h2>Cerrado / Closed</h2>
-          <p>Martes / Tuesday</p>
+          <h2>Cerrado</h2>
+          <p>Martes</p>
         </div>
         <br>
         <div class="footer">
-          <h2>Reservas / Booking</h2>
+          <h2>Reservas</h2>
           <div class="cont_fab"><a href="tel:+34928590707" class="fab_boton"><i class="fas fa-phone-alt"></i></a></div>
           <p>Calle las Olas, 21 (Plaza del Coral) <br>CP:35508 Costa Teguise -  Lanzarote</p>
-          <h3 class="llamar telefono"><i class="fas fa-phone"></i>+34 928 590 707</h3>
-          <h3 class="llamar telefono">info@suculentacafe.es</h3>
+          <h3><i class="fas fa-phone"></i>+34 928 590 707</h3>
+          <h3>info@suculentacafe.es</h3>
         </div>
         <div class="iconos_footer">
           <a href="https://www.facebook.com/Suculenta-Café-355882038593818/" target="_blank"><i class="fab fa-facebook-f telefono"></i></a>
