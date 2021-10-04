@@ -15,8 +15,13 @@
      src="https://kit.fontawesome.com/4ff9607121.js"
      crossorigin="anonymous"
    ></script>
-    <title>Reservas</title>
-    <meta name="description" content="Suculenta Café. Booking / Reservas" />
+    <title>Suculenta Café. Reservas</title>
+    <meta name="description" content="Reserva con nosotros ahora y disfruta de una carta con opciones balanceadas, ricas en sabor y con una presentación llena de color." />
+    <meta name="keywords" content="Restaurante, Costa Teguise, Café, Lanzarote"/>
+    <meta name="author" content="proweb10.com" />
+    <meta name="copyright" content="Suculenta Café" />
+    <meta name="robots" content="index,follow"/>
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="./imagenes/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./imagenes/favicon/apple-icon-60x60.png">
@@ -108,13 +113,23 @@
                 <option value="15:00">15:00</option>
                 <option value="16:00">16:00</option>
               </select>
+              <br>
+              <br>
+              <div>
+                <label for="privacidad">Política de privacidad
+                </label>
+                <br>
+                <label for="aceptar">
+                  <input id="aceptar" type="checkbox" name="aceptar" value="aceptar" required> He leído y acepto la <a href="#privacidad" id="priv">política de privacidad</a>
+              </label>
+              </div>
 
               <input type="hidden" name="_subject" value="Nueva reserva desde suculentacafe.es">
               <input type="hidden" name="_next" value="https://restaurante.proweb10.com/gracias.html">
               <input type="hidden" name="_captcha" value="false">
               <!-- <input type="submit" value="RESERVAR / BOOK"> -->
               <button type="submit" value="RESERVAR / BOOK" class="submit_button">RESERVAR</button>
-              <p id="legal_form">cidlanzarote.com te informa que los datos de carácter personal que nos proporciones rellenando el presente formulario serán tratados por Kevin Charles Turner (Buceo CID Lanzarote) como responsable de esta web. La finalidad de la recogida y tratamiento de los datos personales que te solicitamos es para gestionar la solicitud que realizas en este formulario de contacto. Legitimación: Al marcar la casilla de aceptación, estás dando tu legítimo consentimiento para que tus datos sean tratados conforme a las finalidades de este formulario descritas en la política de privacidad. Como usuario e interesado te informamos que los datos que nos facilitas estarán ubicados en los servidores de MailChimp, (proveedor de servicios de marketing por correo electrónico) en la UE, garantizando unos niveles de seguridad adecuados. El hecho de que no introduzcas los datos de carácter personal que aparecen en el formulario como obligatorios podrá tener como consecuencia que no pueda atender tu solicitud. Podrás ejercer tus derechos de acceso, rectificación, limitación y suprimir los datos en info@cidlanzarote.com así como el Derecho a presentar una reclamación ante una autoridad de control. Puedes consultar la información adicional y detallada sobre Protección de Datos en nuestra página web: www.cidlanzarote.com así como consultar nuestra política de privacidad.</p>
+              <p id="legal_form">suculentacafe.es te informa que los datos de carácter personal que nos proporciones rellenando el presente formulario serán tratados por Diana Gimena Abella Gómez (Suculenta Café) como responsable de esta web. La finalidad de la recogida y tratamiento de los datos personales que te solicitamos es para gestionar la solicitud que realizas en este formulario de contacto. Legitimación: Al marcar la casilla de aceptación, estás dando tu legítimo consentimiento para que tus datos sean tratados conforme a las finalidades de este formulario descritas en la <a href="#privacidad" id="priv2">política de privacidad</a>. Como usuario e interesado te informamos que los datos que nos facilitas estarán ubicados en los servidores de MailChimp, (proveedor de servicios de marketing por correo electrónico) en la UE, garantizando unos niveles de seguridad adecuados. El hecho de que no introduzcas los datos de carácter personal que aparecen en el formulario como obligatorios podrá tener como consecuencia que no pueda atender tu solicitud. Podrás ejercer tus derechos de acceso, rectificación, limitación y suprimir los datos en info@suculentacafe.es así como el Derecho a presentar una reclamación ante una autoridad de control. Puedes consultar la información adicional y detallada sobre Protección de Datos en nuestra página web: <a href="https://suculentacafe.es" id="priv2">suculentacafe.es</a> así como consultar nuestra <a href="#privacidad" id="priv2">política de privacidad</a>.</p>
             </form>
           </div>
         </section>
@@ -154,7 +169,7 @@
           <a class="proweb" href="#legal"><p class="avisos">Aviso legal</p></a>
           <a class="proweb" href="#privacidad"><p class="avisos">Política de privacidad</p></a>
           <a class="proweb" href="#cookies"><p class="avisos">Política de Cookies</p></a>
-          <p>Desarrollado con <i class="fas fa-heart"></i> por <a class="proweb" href="https://proweb10.com">proweb10.com</a></p>
+          <p>Desarrollado con <i class="fas fa-heart"></i> por <a class="proweb" href="https://proweb10.com" target="_blank">proweb10.com</a></p>
         </div>
 
     <!-- MODALES POLÍTICAS -->
@@ -380,5 +395,51 @@
     </div>
   </section> 
   </footer>
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Suculenta Café",
+      "logo": "https://restaurante.proweb10.com/imagenes/suculenta.png",
+      "image": "https://restaurante.proweb10.com/imagenes/Tortitas_paraiso.jpg",
+      "@id": "",
+      "url": "https://suculentacafe.es/",
+      "telephone": "(+34) 928 59 07 07",
+      "priceRange": "$$",
+      "menu": "https://suculentacafe.es/",
+      "servesCuisine": "Mediterránea",
+      "acceptsReservations": "true",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle las Olas, 21 - Plaza del Coral",
+        "addressLocality": "Costa Teguise - Lanzarote",
+        "postalCode": "35508",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.996415,
+        "longitude": -13.490437
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/Suculenta-Caf%C3%A9-355882038593818/",
+        "https://www.instagram.com/suculenta_cafe/"
+      ] 
+    }
+    </script>
 </body>
 </html>
