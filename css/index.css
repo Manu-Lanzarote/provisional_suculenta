@@ -383,6 +383,7 @@ footer h2 {
   pointer-events: auto;
 }
 
+/* MODALES - RECORDAR AÑADIR EL target aquí para que funcionen */
 /* TARGETS IMÁGENES */
 #t_aguacate:target,
 #t_salmon:target,
@@ -421,7 +422,9 @@ footer h2 {
 #euforia:target,
 #silvestre:target,
 #mora:target,
-#zumo:target {
+#zumo:target,
+#fresa:target,
+#zumo_small:target {
   opacity: 1;
   pointer-events: auto;
 }
