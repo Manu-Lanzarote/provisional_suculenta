@@ -79,18 +79,15 @@ main {
 
 /* Sección de mapa y formulario */
 /* GOOGLE MAPS */
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 55%;
-  position: relative;
-  height: 70vh;
-}
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+.imagen_google1 {
+  max-width: 100vw;
+  min-height: 500px;
+  margin-top: 20px;
+  background-image: url("../imagenes/google_sucu1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 900px) {
